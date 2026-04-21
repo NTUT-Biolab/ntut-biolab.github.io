@@ -554,6 +554,23 @@ nav.sidebar-nav a.active {
 
   .research-grid { grid-template-columns: 1fr; }
 
+  .profile-table td {
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+  }
+  .profile-table tr {
+    display: block;
+    padding: 8px 0;
+  }
+  .profile-table .label {
+    width: auto;
+    white-space: normal;
+    padding-right: 0;
+    color: var(--teal);
+    font-size: 12px;
+  }
+
   .data-table, .alumni-table, .member-table { font-size: 11px; }
   .data-table td, .data-table th,
   .alumni-table td, .alumni-table th { padding: 5px 6px; }
