@@ -131,6 +131,21 @@ nav.sidebar-nav a.active {
   text-decoration: underline;
 }
 
+/* ── Site notice ── */
+.site-notice {
+  background: #fffbea;
+  border-left: 4px solid #f0c040;
+  padding: 9px 18px;
+  font-size: 13px;
+  color: #6b5700;
+  line-height: 1.6;
+  flex-shrink: 0;
+}
+.site-notice a {
+  color: #6b5700;
+  font-weight: bold;
+}
+
 /* ── Main content ── */
 .content {
   flex: 1;

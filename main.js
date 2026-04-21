@@ -45,6 +45,18 @@
     a.addEventListener('click', closeDrawer);
   });
 
+  // ── Site-wide update notice ──
+  const banner = document.querySelector('.page-banner');
+  if (banner) {
+    const notice = document.createElement('div');
+    notice.className = 'site-notice';
+    notice.innerHTML =
+      '本網站資料持續更新中，部分內容可能尚未反映最新狀況。' +
+      '若有任何疑問，竭誠歡迎來信至 ' +
+      '<a href="mailto:twp@ntut.edu.tw">twp@ntut.edu.tw</a> 或電洽實驗室，感謝您的耐心與包容。';
+    banner.insertAdjacentElement('afterend', notice);
+  }
+
   // ── Wrap wide tables so they scroll horizontally on mobile ──
   document.querySelectorAll('.data-table, .alumni-table').forEach(table => {
     if (table.parentNode.classList.contains('table-scroll')) return;
