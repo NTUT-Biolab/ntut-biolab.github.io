@@ -1,0 +1,13 @@
+# Lab photos (personal/private)
+photo/*.JPG
+photo/*.jpg
+photo/*.jpeg
+photo/*.png
+photo/*.gif
+
+# Keep the professor's sidebar photo
+!photo/Tun-Wen-Pai-270x270_c.jpg
+
+# OS files
+.DS_Store
+Thumbs.db
