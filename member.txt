@@ -1,0 +1,2525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW">
+
+
+
+
+<head>
+<!-- GlobalShare 3.2, Copyright 2005 FlySheet Information Services, Inc. -->
+
+
+<title>臺灣博碩士論文知識加值系統：自由的博碩士學位論文全文資料庫 </title>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/gs32/nclcdr/pngfix.js"></script>
+<![endif]-->
+
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Language" content="zh-TW">
+<meta name="Distribution" content="Taiwan">
+<meta name="360-site-verification" content="66485fbdbaf6542627aa835779bb644f" />
+<meta name="Robots" content="INDEX,NOFOLLOW">
+<meta name="robots" content="noarchive">
+<meta name="keywords" content="免費PDF，免費全文，免費論文，寫論文，查資料，找資料，找論文，下載電子全文，學位論文，碩博士論文，博碩士論文，期刊，中文期刊，期刊論文，期刊文章，電子期刊，會議論文，研討會論文，CETD，ETD，eThesys，論文下載，學位論文系統，中文，華文，電子資料庫，全文資料庫，學術文獻，參考文獻，教育部，高教司，國圖，國家圖書館，CNDLTD，NDLTD，全國博碩士論文資訊網，全國博碩士論文摘要檢索系統，臺灣博碩士論文知識加值系統，論文，台大論文，師大論文，政大論文，成大論文，中山論文，交大論文，中央論文，清大論文，淡江論文，輔大論文，文化大學論文，東海論文，國家博碩士論文數位圖書館，搜尋引擎，網路服務資源，電子書，政府資訊，考試資訊，雲端服務，雲端書目，雲端書庫，研究所考試，研究所考古題">
+<meta name="description" content="落實Open Access自由、平等、開放精神的全國博碩士論文資訊網">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta forua="true" http-equiv="Cache-Control" content="max-age=86400"/>
+
+
+
+<!-- _initscript.htm -->
+
+
+<!-- yui's js prototype.js bbfix.js showcontext.js /gs32/webform.js flyjs.js >> all.js -->
+<!-- template2/_js_combine.htm -->
+
+
+<!-- flybase's combine js file-->
+<script type="text/javascript" src="/gs32/myjs/all.js?v=1650361290.0"></script>
+<script type="text/javascript" src="/gs32/myjs/clipboard.min.js?v=1650361290.0"></script>
+
+
+
+<script type="text/javascript">
+var errxmlrequest = "系統無法執行你的操作，請重新操作。錯誤代碼："
+//set timeout option enable or disable
+_timeoutflag = 0;
+
+//search input value clear enable or disable
+var _clearsearchflag = 1;
+
+//window.open close time 10000 = 10 seconds
+opener_close_time = 10000;
+var gs32path="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/";
+var openajaxmsg=0;
+var ajaxactdisp=0;
+var jstimer = 300
+var autocompurl = '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getsquerystr'
+var autocomplist = [];
+var oldautocomplist = [];
+autocomplist[0] = '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getsquerystr'
+oldautocomplist[0] = '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getsquerystr'
+
+document.onkeypress = keyhandler;
+document.onkeyup = keyuphandler;
+
+
+//brwfield select onchange
+function brwstatus(formval, indval, buval, ckstr, selind)
+{
+var f = document.forms[formval]
+var ScanL = ckstr.split('||')
+var oaceslist =[oACDS0]
+//can't find field => user select to none field limit
+if (ScanL.indexOf(indval) == -1)
+{
+//ps("con-1");
+//initautocomplete()
+oaceslist[selind].scriptQueryAppend= "&cache="+(new Date()).getTime();
+try{f.elements[buval].disabled = true;}
+catch (e) {}
+
+}
+//find field => user select one field 
+else{
+oaceslist[selind].scriptQueryAppend= "&field="+ScanL[ScanL.indexOf(indval)]+"&selind="+selind+"&cache="+(new Date()).getTime()+"&";
+//autocomplist[selind] = autocompurl + "?&field="+ScanL[ScanL.indexOf(indval)]+"&selind="+selind+"&cache="+(new Date()).getTime()+"&";
+//ps("con-2", autocomplist[selind]);
+try{f.elements[buval].disabled = false;}
+catch (e) {}
+
+}
+//YAHOO.example.ACFlatData.init();
+}
+
+</script>
+<!-- tpec/_css.htm -->
+
+
+<link rel=stylesheet type="text/css" href="/gs32/css/style-min.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/css/myperson.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/yui/yui2.3.0/build/tabview/assets/tabview.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/yui/yui2.3.0/build/tabview/assets/skins/sam/tabview_flybase2007.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/css/module_tabs.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/yui/yui2.3.0/build/calendar/assets/skins/sam/calendar.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/yui/yui2.1.0/build/menu/assets/menu.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/yui/yui2.1.0/build/container/assets/container.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/css/meta.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/reset.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/fontset.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/css/template2.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/etds.css?v=1650361290.0">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/nclcdr-min.css?v=1650361290.0">
+
+<link rel="image_src" type="image/jpeg" href="https://ndltd.ncl.edu.tw/gs32/nclcdr/standunit.png" />
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+<!-- _timeout.htm -->
+
+
+<link rel=stylesheet type=text/css href=/gs32/myjs/jscalendar-1.0/skins/aqua/theme.css?v=1650361290.0 />
+<script language=JavaScript src="/gs32/myjs/jscalendar-1.0/calendar.js?v=1650361290.0"></script>
+<script language=JavaScript src="/gs32/myjs/jscalendar-1.0/calendar-setup.js?v=1650361290.0"></script>
+<script language=JavaScript src="/gs32/myjs/jscalendar-1.0/lang/calendar-big5-utf8.js?v=1650361290.0"></script>
+
+ 
+<SCRIPT language=JavaScript1.1>
+exiturl = "/gs32/nclcdr/timeoutpage.htm"; 
+sessionexiturl = "/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/exit";
+<!--
+	var secondsleft = 30 * 60;
+	var showntimeout = false; // has the alert been shown?
+	var timewin; // handle for the timeout warning window
+	var remind = 10 * 60; // remind user when this much time is left
+
+        orgsecs = secondsleft
+	function fsUnload() {
+		cleartimeout();
+		// BEGIN: FSPage plugin for the JS-onUnload() event.
+		
+		// END: FSPage plugin for the JS-onUnload() event.
+	}
+        // this browse onreload or close , excute this action
+	function cleartimeout() {
+		if ((timewin != null) && !(timewin.closed)){
+			timewin.close();
+                }
+	}
+	function showtimeout() {
+		if (secondsleft <= 0){
+                        //ps("no timie!", exiturl);
+                        //parWin = window.opener;
+                        //parWin.location.href = exiturl
+                        if (exiturl != ""){
+                        //window.location.href = exiturl;
+                        //force close session
+
+                        //try{showInfo_htm('', sessionexiturl)}
+                        //catch (err) {}
+
+                        //parent.location.href = exiturl;
+
+                        } 
+                        //self.close();
+			return;
+                }
+		if (showntimeout == false && secondsleft > 0 && secondsleft <= remind) {
+                        //timeoutmsg('系統通知',30,'/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/browse','<h4>親愛的使用者：<br>您好，由於您的畫面閒置時間已超過40分鐘，本系統將於600秒後自動將您的檢索結束，若您欲繼續使用，請按"繼續使用"</h4>','繼續使用');
+			showntimeout = true;
+		}
+		var minutes = Math.floor (secondsleft / 60);
+		var seconds = secondsleft % 60;
+		if (seconds < 10)
+			seconds = "0" + seconds;
+
+                try{ 
+		if (_timeoutflag){
+
+                 rvs = toLatin("系統通知" + minutes + ":" + seconds);
+                 //window.status = rvs;
+                 try{ document.getElementById("timestatus").innerHTML = rvs;}
+                 catch(err) {
+                 window.status = rvs;  
+                 }  
+                 }
+                } catch (err) {}
+		var period = 1;
+		setTimeout("showtimeout()", period*1000);
+		secondsleft -= period;
+	}
+	// -->
+</SCRIPT>
+<script language="JavaScript"> var _version = 1.0 </script>
+<script language="JavaScript1.1"> _version = 1.1 </script>
+<script language="JavaScript1.2"> _version = 1.2 </script>
+
+<script language="JavaScript1.1">
+function toLatin(x) {
+	if (_version >= 1.2 && ("zh" == "fr" || "zh" == "es")) {
+		var pattern = new RegExp("&#([0-9]+);");
+		while ((result = pattern.exec(x)) != null) {
+			x = x.replace(result[0], String.fromCharCode(RegExp.$1));
+		}
+		x = x.replace(/&nbsp;/g, ' ');
+	}
+	return (x);
+}
+</script>
+
+
+<script>
+try{
+var parWin = window.opener;
+parWin.secondsleft = orgsecs;
+}
+catch (err){}
+</script>
+
+<span id="keepsessionalive"></span>
+
+<!-- new keepsessionalive:900000(900 seconds) -->
+<script>
+window.setTimeout(function (){showInfo_htm('keepsessionalive', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/gs32keepalive?init=1');}, 900000);
+</script>
+        
+
+
+
+</head>
+
+
+
+
+<body     onLoad="showtimeout(); " 
+ onUnload="fsUnload();closeopen();" class="yui-skin-sam" id="bodyid"
+ style="font-size:11pt;"><!--字級大小控制-->
+
+
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_spring.css?v=1650361290.0" title="spring">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_summer.css?v=1650361290.0" title="summer">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_fall.css?v=1650361290.0" title="fall">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_winter.css?v=1650361290.0" title="winter">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_ncl.css?v=1650361290.0" title="ncl">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_night.css?v=1650361290.0" title="night">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_vac1.css?v=1650361290.0" title="vac1">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_vac2.css?v=1650361290.0" title="vac2">
+<link rel=stylesheet type="text/css" href="/gs32/nclcdr/css/type_vac3.css?v=1650361290.0" title="vac3">
+<script type="text/javascript" src="/gs32/myjs/styleswitcher.js?v=1650361290.0"></script>
+
+
+
+
+
+
+
+
+<script>
+
+//Specify affected tags. Add or remove from list:
+//var tgs = new Array( 'div','td','tr');
+var tgs = new Array('');
+
+//Specify spectrum of different font sizes:
+//var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+var addrange = 21;
+var szs = new Array('7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27');
+var startSz = 4;
+
+// 讀取cookie's fontsize 
+var cookie_fontsize = readCookie("fontsize");
+
+// 設定初使值font-size 及 切換index 開始位置
+for(c=0; c < szs.length; c++){
+if (szs[c] == cookie_fontsize){
+    startSz = c;
+    setfontsize(cookie_fontsize);
+    break
+}
+}
+
+// 預設的font size index IN szs
+//ps("startSz", startSz);
+
+function ts(inc) {
+	if (!document.getElementById) return
+	var sz = startSz,i,j,cTags;
+	
+	sz += inc;
+	if ( sz < 0 ) {
+            sz = 0;
+            alert("this is smallest!");
+        }
+
+	if ( sz > addrange ) {
+        sz = addrange;
+            alert("this is biggest!");
+        }
+
+	startSz = sz;
+        nowfontsize = szs[ sz ];
+        //ps("nowfontsize", nowfontsize);
+        setfontsize(nowfontsize)  
+}
+
+// 變更文字大小
+function setfontsize(thisfontsize){
+    var d = document,cEl = null
+    if (!(cEl = d.getElementById("body"))) {
+       cEl = d.getElementsByTagName("body")[0];}
+    cE1 = d.getElementById("bodyid")
+    //ps("thisfontsize", thisfontsize);
+    cEl.style.fontSize = thisfontsize+'pt'; 
+    createCookie("fontsize",thisfontsize, 365);
+
+    // 設定預設的font size index
+    for(c=0; c < szs.length; c++){
+       if (szs[c] == thisfontsize){
+           startSz = c;
+           break
+       }
+    }
+}
+
+</script>
+
+
+<!-- lastsearch() => combine last search observer --> 
+<!-- showtimeout();fsUnload() => javascript window's bottom menu display timer --> 
+<!-- closeopen() => close all window.open function -->
+<!-- bb_init() => store browser history --> 
+
+<script>
+function getScrollTop() {
+  if ( document.documentElement.scrollTop )
+    return document.documentElement.scrollTop;
+
+  return document.body.scrollTop;
+}
+
+function scrollHandler() {
+   var e = document.getElementById('loading');
+   e.style.top = getScrollTop();
+}
+
+window.onscroll = function () {
+   var elem = document.getElementById('loading');
+   if ( !elem.currentStyle || elem.currentStyle.position != 'absolute' ) {
+      window.onscroll = null;
+   } else {
+      window.onscroll = function () { elem.style.top = getScrollTop(); };
+      document.getElementById('loading').style.top = getScrollTop();
+   }
+}
+
+PX1 = 0;
+PX2 = 0;
+PY1 = 0;
+PY2 = 0;
+function refset() {
+  if (document.layers) {
+    PX1 = window.innerWidth - 100;
+    if (PX1 < 0) PX1 = 0;
+    PY1 = window.pageYOffset;
+    if (PY1 < 0) PY1 = 0;
+    if (PX1 != PX2) {
+      document.layers.loading.left = PX1;
+      PX2 = PX1;
+    }
+    if ( PY1 != PY2) {
+      document.layers.loading.top = PY1;
+      PY2=PY1;
+    }
+  } else {
+    PX1 = document.body.clientWidth - 100;
+    if (PX1 < 0) PX1 = 0;
+    PY1 = document.body.scrollTop;
+    if (PY1 < 0) PY1 = 0;
+    if(PX1 != PX2 || PY1 != PY2) {
+      document.all.loading.style.display = "none";
+      document.all.loading.style.left = PX1 + 50;
+      PX2 = PX1;
+      document.all.loading.style.top = PY1;
+      PY2 = PY1;
+      document.all.loading.style.display = "none";
+    }
+  }
+  setTimeout("refset()", 50);
+}
+</script>
+
+<DIV ID="loading" STYLE="position:absolute;display: none;">
+資料載入處理中...
+</DIV>
+
+<!-- HTM::nclcdr/searchresult.htm  -->
+<!-- session.pid:fb32__nclcdr__--AmMVgc--29705(25) -->
+
+<form method=post name=main action="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/result">
+
+<!-- whereami=>nclcdr/nclcdr1_head.htm  -->
+
+
+
+<!-- whereami=>nclcdr/_basic_head.htm  -->
+
+
+<a href="#maincontent" id="gotocenter" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容</a>
+<div class="etds_mainbd">
+  <h1>
+    <div class="system_header"  onclick="window.location.href='/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?mode=basic';" onkeypress="window.location.href='/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?mode=basic';"  style="cursor :pointer;">
+      <span class="sr-only">臺灣博碩士論文加值系統</span>
+    </div>
+  </h1>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="10" background="/gs32/nclcdr/image/etds_mbg_l.gif"></td>
+      <td class="etds_mainct"> 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="100px;" valign="top"><div class="subnav">
+
+<!-- whereami=>nclcdr/nclcdr_headoption.htm  -->
+
+
+
+
+<table><tr><td>
+<a class="accesskey" title="上方功能區塊" style="font-size:8pt" accesskey="U" href="#">:::</a>
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrsitemap" title="網站導覽">網站導覽</a>|
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?mode=basic" title="首頁">首頁</a>|
+<a href="https://ndltd.ncl.edu.tw/r/about" title="關於本站(另開新視窗)" rel="noopener noreferrer" target="_blank">關於本站</a>|
+<a href="https://cloud.ncl.edu.tw/get_contact.php" title="聯絡我們(另開新視窗)" rel="noopener noreferrer" target="_blank">聯絡我們</a>|
+<a href="https://www.ncl.edu.tw/" title="國圖首頁(另開新視窗)" rel="noopener noreferrer" target="_blank">國圖首頁</a>|
+<a href="https://ndltd.ncl.edu.tw/r/faq" title="常見問題(另開新視窗)" rel="noopener noreferrer" target="_blank">常見問題</a>|
+<a target=_blank rel="noopener noreferrer" href="https://ndltd.ncl.edu.tw/r/manual" title="操作說明(另開新視窗)">操作說明</a>
+<!--<a href="#" title="相關網站">相關網站</a>|-->
+</td></tr>
+<tr><td style="text-align:right;">
+<a href="https://etds.ncl.edu.tw?v=2018" title="English">English</a>
+|<a href="https://www.facebook.com/ndltdTW" title="FB 專頁(另開新視窗)" rel="noopener noreferrer" target="_blank">FB 專頁</a>
+|<a href="https://ndltd.ncl.edu.tw/r/mobile" title="Mobile">Mobile</a>
+<!--(<a href="https://ndltd.ncl.edu.tw/r/appdownload" tilte="App下載" rel="noopener noreferrer" target="_blank">App下載</a>)-->
+</td></tr>
+</table>
+</div>
+               <div class="login_bar">
+<div class="user_area">
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/exit?exiturl=/cgi-bin/gs32/gsweb.cgi?o=dwebmge" title="登出" onclick="setsyscookie('cookieaccount', '', 365)" onkeypress="setsyscookie('cookieaccount', '', 365)" >登出</a>
+</div>
+               </div>
+              </td>
+          </tr>
+          <tr>
+            <td>
+               <div class="cc_bar">
+                <ul>
+                  <li><a href="#XX"  onclick="setActiveStyleSheet('spring')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){setActiveStyleSheet('spring')}" ><img src="/gs32/nclcdr/image/cc_a.gif" 
+ title="版面粉紅色" alt="版面粉紅色" /></a>
+<noscript><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?switchcss=type_spring.css" title="切換版面粉紅色">切換版面粉紅色</a></noscript>
+                  </li>
+                  <li><a href="#XX"  onclick="setActiveStyleSheet('summer')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){setActiveStyleSheet('summer')}" ><img src="/gs32/nclcdr/image/cc_b.gif" 
+ title="版面綠色" alt="版面綠色" /></a>
+<noscript><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?switchcss=type_summer.css" title="切換版面綠色">切換版面綠色</a></noscript>
+</li>
+                  <li><a href="#XX"  onclick="setActiveStyleSheet('fall')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){setActiveStyleSheet('fall')}" ><img src="/gs32/nclcdr/image/cc_c.gif" 
+ title="版面橘色" alt="版面橘色" /></a>
+<noscript><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?switchcss=type_fall.css" title="切換版面橘色">切換版面橘色</a></noscript>
+</li>
+                  <li><a href="#XX"  onclick="setActiveStyleSheet('winter')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){setActiveStyleSheet('winter')}" ><img src="/gs32/nclcdr/image/cc_d.gif" 
+ title="版面淡藍色" alt="版面淡藍色" /></a>
+<noscript><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?switchcss=type_winter.css" title="切換版面淡藍色">切換版面淡藍色</a></noscript>
+</li>
+                  <li><a href="#XX"  onclick="setActiveStyleSheet('ncl')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){setActiveStyleSheet('ncl')}" ><img src="/gs32/nclcdr/image/cc_e.gif" 
+ title="版面黃色" alt="版面黃色" /></a>
+<noscript><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?switchcss=type_ncl.css" title="切換版面黃色">切換版面黃色</a></noscript>
+</li>
+                  <li><a href="#XX"  onclick="setActiveStyleSheet('night')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){setActiveStyleSheet('night')}" ><img src="/gs32/nclcdr/image/cc_f.gif" 
+ title="版面藍色" alt="版面藍色" /></a>
+<noscript><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?switchcss=type_night.css" title="切換版面藍色">切換版面藍色</a></noscript>
+</li>
+                </ul>
+              </div>
+              </div>
+
+              <div class="nav">
+
+
+<ul class="version">
+<li>
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?webmgemode=general&mode=basic"><img src="/gs32/nclcdr/image/etds_vah.gif" alt="一般民眾" name="Image8" width="" height="24" border="0" id="Image8" /></a>
+</li>
+<li>
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?webmgemode=researcher&mode=advance" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','/gs32/nclcdr/image/etds_vbh.gif',1)" onfocus="" onblur=""><img src="/gs32/nclcdr/image/etds_vb.gif" alt="研究人員" name="Image9" width="" height="24" border="0" id="Image9" /></a>
+</li>
+<li>
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/webmge?webmgemode=graduate&mode=advance" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','/gs32/nclcdr/image/etds_vch.gif',1)" onfocus="" onblur=""><img src="/gs32/nclcdr/image/etds_vc.gif" alt="校院系所及研究生" name="Image10" height="24" border="0" id="Image10" /></a>
+</li>
+    </ul>
+
+<!-- whereami=>nclcdr/_searchmodeswitch.htm  -->
+
+<ul class="mainnav"><h2><span class="sr-only">功能切換導覽列</span></h2>
+<li><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/search?mode=basic" title="論文查詢"><img src="/gs32/nclcdr/image/etds_nav_01.gif" 
+        alt="論文查詢" /></a></li>
+<li><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/gsimpactbrw?init=1&date=114" title="排行榜"><img src="/gs32/nclcdr/image/etds_nav_04.gif" 
+        alt="排行榜" /></a></li>
+<li><a href="https://estudio.ncl.edu.tw/" title="影音圖像" rel="noopener noreferrer" target='_blank'><img src="/gs32/nclcdr/image/video_1.png" 
+        alt="影音圖像" /></a></li>
+<li><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/subjectareasearch?init=1" title="主題館(另開新視窗)" rel="noopener noreferrer" rel="noopener noreferrer" target="_blank"><img src="/gs32/nclcdr/image/etds_nav_e02.gif" 
+              alt="主題館(另開新視窗)" /></a></li>
+<li><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/dispatchpersonal?menuid=personal" title="我的研究室"><img src="/gs32/nclcdr/image/etds_nav_05.gif" 
+        alt="我的研究室" /></a></li>
+<li><a href="https://oatd.org/" title="NDLTD查詢(另開新視窗)" rel="noopener noreferrer"  rel="noopener noreferrer" target="_blank"><img src="/gs32/nclcdr/image/etds_nav_06.gif" 
+        alt="NDLTD查詢(另開新視窗)" /></a></li>
+</ul>
+
+
+
+              </div></td>
+          </tr>
+          <tr>
+            <td>
+<div class="user_div">
+姓名：陳勝舢 您好！臺灣時間：2026/05/05 11:47(140.124.183.186)
+
+</div>
+
+
+
+<div class="fontsize_control">
+字體大小：
+
+<a href="javascript:ts(1);"><img src="/gs32/nclcdr/image/etds_icon_fb.gif" alt="字級放大" align="absmiddle" /></a>
+&nbsp;
+<a href="javascript:ts(-1);"><img src="/gs32/nclcdr/image/etds_icon_fs.gif" alt="字級縮小" align="absmiddle" /></a>
+&nbsp;
+<a href="#XX"  onclick="setfontsize('11');"    onkeypress="setfontsize('11');"  title="預設字形"><img src="/gs32/nclcdr//image/etds_icon_fd.gif" alt="預設字形" border=0 align="absmiddle" ></a>
+&nbsp;
+<noscript>字級大小SCRIPT，如您的瀏覽器不支援，IE6請利用鍵盤按住ALT鍵 + V → X → (G)最大(L)較大(M)中(S)較小(A)小，來選擇適合您的文字大小，如為IE7或Firefoxy瀏覽器則可利用鍵盤 Ctrl + (+)放大 (-)縮小來改變字型大小。</noscript>
+<noscript><br/>字體大小變更功能，需開啟瀏覽器的JAVASCRIPT功能</noscript>
+</div>
+</td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="result">
+<!-- HTM::result.htm  -->
+
+<script>
+window.setTimeout(function (){window.location.href = '#result';},0);
+</script>
+   
+<div id="sendmailmsg">
+</div>
+
+<!-- <a name=top /></a> -->
+
+<script>
+try{document.getElementById("loading").style.display;}
+catch(err){}
+window.setTimeout(function (){hide_image();},1);
+</script>
+
+
+
+
+
+<tr>
+   <td>
+
+      <div class="cont_l2">
+
+<!-- nclcdr/contentbrowse.htm -->
+
+<script>
+window.setTimeout(function (){window.location.href = '#result';},0);
+</script>
+
+<script>
+msg = ''; 
+if (msg){
+alert(msg);
+}
+
+// recommand use
+
+</script>
+
+
+<script>
+try{document.getElementById("loading").style.display;}
+catch(err){}
+window.setTimeout(function (){hide_image();},1);
+</script>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="border_cube">
+                <tr>
+                  <a class="accesskey" style="color:#D5D723;font-size:8pt;position:absolute;z-index:2;" title="中央區塊" id="maincontent" accesskey="C" href="#">:::</a>
+                  <td class="title_bg"><h3 class="title_n1" id="maincontent"><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/search?mode=basic" title="簡易檢索">簡易檢索</a></h3></td>
+                </tr>
+
+
+              <tr><td>
+
+
+
+  <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+     <tr>
+     <td colspan="2" id="result" headers="start">
+<h3><img src="/gs32/nclcdr/image/script.png" alt="" align="absmiddle" />檢索結果
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="suggest_span" id="suggest_area" onclick="showInfo_htm('suggest_area', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/suggest_area?h1=3', '資料載入處理中...')"    onkeypress="evt = event || window.event; if (evt.keyCode == 13){showInfo_htm('suggest_area', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/suggest_area?h1=3', '資料載入處理中...')};" ><a href="#XX">點我看建議檢索詞</a></span>
+  </h3>
+     </td>
+     </tr>
+
+  </table>
+
+
+<input type=hidden name="gosort" value="">
+
+
+<table cellspacing=0 border=0 class="brwrestable">
+<tr>
+<td headers="start" colspan=3>
+
+  <tr>
+   <td width="25" id="start">&nbsp;</td>
+   <td headers="start">
+檢索策略：<span class="etd_e">"國立臺北科技大學".asc and #3</span>；檢索結果共<span class="etd_e">&nbsp;41&nbsp;</span>筆資料 <a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/search?mode=basic#histarea" title="檢視檢索歷史"><img src="/gs32/nclcdr/image/histbrw.gif" alt="檢視檢索歷史" title="檢視檢索歷史"></a>  <a href="#XX" onclick="if (confirm('確定將此策略加入到我的研究室中的我的檢索策略，〝是〞請按確定，〝否〞則請取消。')){loadintoIframe('splink',
+                    '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/addmyhistory?hsel=X4')}" onkeypress="evt = event || window.event; if (evt.keyCode == 13){if (confirm('確定將此策略加入到我的研究室中的我的檢索策略，〝是〞請按確定，〝否〞則請取消。')){loadintoIframe('splink',
+                    '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/addmyhistory?hsel=X4')}}"  title="將此策略加入到我的研究室中的我的檢索策略，此策略尚未加入。"><img src="/gs32/nclcdr/image/histadd.gif" alt="將此策略加入到我的研究室中的我的檢索策略，此策略尚未加入。"></a>  <a href="#XX" onclick="if (confirm('確定將此策略加入到我的研究室中的我的研究偏好(SDI)，〝是〞請按確定，〝否〞則請取消。')){addalert('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/add2mysdi?h=3')}" onkeypress="evt = event || window.event; if (evt.keyCode == 13){if (confirm('確定將此策略加入到我的研究室中的我的研究偏好(SDI)，〝是〞請按確定，〝否〞則請取消。')){addalert('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/add2mysdi?h=3')}}"  title="將此策略加入到我的研究室中的我的研究偏好(SDI)，此策略尚未加入了。"><img src="/gs32/nclcdr/image/sdiadd.gif" alt="將此策略加入到我的研究室中的我的研究偏好(SDI)，此策略尚未加入了。"></a>
+<br />
+<!-- _researcharea.htm -->
+
+    <div id="researchdivid" style="">
+    
+
+    在搜尋的結果範圍內查詢：<label for=research><input class=inputbox name=research id=research size=20  onmouseover="this.select();this.focus();"  onfocus="this.select();this.focus();" ></label>
+    
+<label for="researchfld"><select name=researchfld>
+<option value="">不限欄位</option>
+<option value="ti">論文名稱</option>
+<option value="au">研究生</option>
+<option value="asc">校院名稱</option>
+<option value="sdp">系所</option>
+<option value="pyr">論文出版年</option>
+<option value="ad">指導教授</option>
+<option value="kw">關鍵詞</option>
+<option value="tc">論文目次</option>
+<option value="ab">摘要</option>
+<option value="rf">論文參考文獻</option>
+<option value="yr">畢業學年度</option>
+</select></label>
+<input type=submit name=researchok class=button value='確定'  onclick="return ckdomidexist('research', '請輸入再檢索字串!')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){return ckdomidexist('research', '請輸入再檢索字串!')}" >
+</div>
+</td>
+  </tr>
+
+</table>
+
+
+
+
+              </td><tr>
+              <tr><td align=center>
+ 
+
+<div class="search_bar">
+
+<table cellspacing=0 width="100%">
+<tr>
+<td align="center">
+
+<td align=center><input type=hidden name="switchfmt" id="switchfmt" value="">
+<label for="selchgfmt"><select name=selchgfmt id=selchgfmt onChange="switchfmtfunc()">
+<option value="1">表格式
+<option value="9" selected>條列式
+</select></label>
+</td>
+
+<td align=center><!--
+<input type=button class="button" id="ctx" name=bbrw value='檢視星狀圖' onclick="javascript:starshow('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/scupiostar', 'star')" id="ctx">
+-->
+
+
+<script type="text/javascript">
+  YAHOO.namespace("example.container");
+  YAHOO.example.container.tt1 = new YAHOO.widget.Tooltip("tt1", 
+   { context:"ctx", text:"Scupio Star Readme" });
+</script>
+</td>
+
+<td>
+
+<label for='sortby'>
+排序：
+</label>
+<select name=sortby id=sortby onFocus="initSelectSortby();">
+  <option value="">請選擇排序欄位
+
+      <option value=".rule3">相關度(遞增)
+      <option value="-.rule3" selected>相關度(遞減)
+          
+
+      <option value="auc">研究生(遞增)
+      <option value="-auc">研究生(遞減)
+          
+
+      <option value="aue">研究生(外文)(遞增)
+      <option value="-aue">研究生(外文)(遞減)
+          
+
+      <option value="tic">論文名稱(遞增)
+      <option value="-tic">論文名稱(遞減)
+          
+
+      <option value="tie">論文名稱(外文)(遞增)
+      <option value="-tie">論文名稱(外文)(遞減)
+          
+
+      <option value="sc">校院名稱(遞增)
+      <option value="-sc">校院名稱(遞減)
+          
+
+      <option value="yr">畢業學年度(遞增)
+      <option value="-yr">畢業學年度(遞減)
+          
+
+      <option value="aun">研究生(原姓名)(遞增)
+      <option value="-aun">研究生(原姓名)(遞減)
+          
+
+      <option value="sglv1">學門(遞增)
+      <option value="-sglv1">學門(遞減)
+          
+
+      <option value="sglv2">學類(遞增)
+      <option value="-sglv2">學類(遞減)
+          
+
+      <option value=".total_bequote">被引用(遞增)
+      <option value="-.total_bequote">被引用(遞減)
+          
+
+      <option value=".total_record">點閱(遞增)
+      <option value="-.total_record">點閱(遞減)
+          
+
+      <option value=".total_score">評分(遞增)
+      <option value="-.total_score">評分(遞減)
+          
+
+      <option value=".total_fulltext">下載(遞增)
+      <option value="-.total_fulltext">下載(遞減)
+          
+
+      <option value=".total_favority">收藏(遞增)
+      <option value="-.total_favority">收藏(遞減)
+          
+</select>
+
+<script>
+ function initSelectSortby()
+{
+	var theSelect = document.getElementById("sortby");
+	theSelect.changed = false;
+	theSelect.onfocus = selectFocussed;
+	theSelect.onchange = selectChanged;
+	theSelect.onkeydown = selectKeyed;
+	theSelect.onclick = selectClicked;
+	return true;
+}
+
+function selectChanged(theElement)
+{
+	var theSelect;	
+	if (theElement && theElement.value)
+	{
+		theSelect = theElement;
+	}
+	else
+	{
+		theSelect = this;
+	}
+	if (!theSelect.changed)
+	{
+		return false;
+	}
+	theSelect.form.submit();
+	return true;
+}
+
+function selectClicked()
+{
+	this.changed = true;
+}
+
+function selectFocussed()
+{
+	this.initValue = this.value;
+	// return true;
+}
+
+function selectKeyed(e)
+{
+	var theEvent;
+	var keyCodeTab = "9";
+	var keyCodeEnter = "13";
+	var keyCodeEsc = "27";
+	
+	if (e)
+	{
+		theEvent = e;
+	}
+	else
+	{
+		theEvent = event;
+	}
+
+	if ((theEvent.keyCode == keyCodeEnter))
+	{
+		this.changed = true;
+		selectChanged(this);
+	}
+	else if (theEvent.keyCode == keyCodeEsc)
+	{
+		this.value = this.initValue;
+	}
+	else
+	{
+		this.changed = false;
+	}
+	return true;
+}
+</script>
+
+
+
+</td>
+
+<td>
+<table ><tr>
+<td><img src="/gs32/nclcdr/image/gofirst_.gif" border="0" alt="第一頁"></td>
+<td><img src="/gs32/nclcdr/image/goprev_.gif" border="0" alt="上一頁"></td>
+<td><img src="/gs32/nclcdr/image/gonext_.gif" border="0" alt="下一頁"></td>
+<td><img src="/gs32/nclcdr/image/golast_.gif" border="0" alt="最後一頁"></td>
+</tr></table>
+</td>
+<td align="center">
+<label for="jmpage"><input type=text id="jmpage" name="jmpage" value="1" class="text_jpg" ></label>
+/1<font class=gs32sys_12pt>頁</font>
+<input type=submit class="button" name="jumpfmt1page" value="跳至" title="點我換頁">
+</td><td align="center">
+<input type=hidden id="SubmitChangePage" name="SubmitChangePage" value="">
+<label for="jpsize">每頁顯示</label>
+<select id=jpsize name=jpsize onfocus="initSelect();" >
+<option value="10"> 10
+<option value="20"> 20
+<option value="30"> 30
+<option value="50"> 50
+<option value="100" selected>100
+</select>筆
+
+</td></tr></table>
+<input type=hidden name="gofirst" value="">
+<input type=hidden name="goprev" value="">
+<input type=hidden name="gonext" value="">
+<input type=hidden name="golast" value="">
+<input type=hidden name="jpage" value="">
+<input type=hidden name="psize" value="">
+<input type=hidden name="chgfmt" value="">
+
+<script>
+ function initSelect()
+{
+        var theSelect = document.getElementById("jpsize");
+        theSelect.changed = false;
+        theSelect.onfocus = selectFocussed;
+        theSelect.onchange = selectChanged;
+        theSelect.onkeydown = selectKeyed;
+        theSelect.onclick = selectClicked;
+        return true;
+}
+
+function selectChanged(theElement)
+{
+        var theSelect;
+        if (theElement && theElement.value)
+        {
+                theSelect = theElement;
+        }
+        else
+        {
+                theSelect = this;
+        }
+        if (!theSelect.changed)
+        {
+                return false;
+        }
+        document.getElementById('SubmitChangePage').value='1';
+        theSelect.form.submit();
+        return true;
+}
+
+function selectClicked()
+{
+        this.changed = true;
+}
+
+function selectFocussed()
+{
+        this.initValue = this.value;
+        // return true;
+}
+
+function selectKeyed(e)
+{
+        var theEvent;
+        var keyCodeTab = "9";
+        var keyCodeEnter = "13";
+        var keyCodeEsc = "27";
+
+        if (e)
+        {
+                theEvent = e;
+        }
+        else
+        {
+                theEvent = event;
+        }
+
+        if ((theEvent.keyCode == keyCodeEnter))
+        {
+                this.changed = true;
+                selectChanged(this);
+        }
+        else if (theEvent.keyCode == keyCodeEsc)
+        {
+                this.value = this.initValue;
+        }
+        else
+        {
+                this.changed = false;
+        }
+        return true;
+}
+</script>
+
+
+</div>
+
+              </td><tr>
+
+
+              <tr><td>
+
+<div id="dragDiv"  class="Popup">
+  <div id="cntnt"></div>
+</div>
+
+
+
+
+<table cellspacing=0 cellpadding=1 align=center id="tablefmt1">
+<!-- fmt1head.htm -->
+
+
+    <tr>
+    <th class=mainth1 nowrap>
+<input type=button class=button id="search_flag_ckall" value="全選"
+ onClick="schallchk('0' ,'searchlist', 'search_flag_ckall', '', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker', '全選', '清除')"></span>
+            </th>
+    <th class=mainth2>&nbsp;</th>
+    
+<th nowrap class=mainth width=90%%>書目資料(<B>有 <img src="/gs32/nclcdr/image/book-open.png" alt="fulltext" align="absmiddle"> 者，表示該論文之電子全文已獲授權於網際網路開放免費下載。</B>)</th></tr>
+
+
+<tr ><td class="tdfmt1-first"><label for="sel1" value="1"><input type=checkbox id="sel1" value="1" name="sel1" value="1" onclick="checker('0', 'sel1','1', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">1.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=1&h1=3" class="slink"><span class="etd_d">應用大型語言模型於網路威脅情資分析之研究</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／114／博士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:陳勝舢</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font>／孫勤昱</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDLhqg_GLYaQY_&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDLhqg_GLYaQY_&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:18</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:1</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel2" value="1"><input type=checkbox id="sel2" value="1" name="sel2" value="1" onclick="checker('0', 'sel2','2', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">2.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=2&h1=3" class="slink"><span class="etd_d">以幾何深度學習與蛋白語言模型的融合策略的抗原表位預測系統</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／113／博士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:石道全</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNZK&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNZK&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:110</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:14</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel3" value="1"><input type=checkbox id="sel3" value="1" name="sel3" value="1" onclick="checker('0', 'sel3','3', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">3.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=3&h1=3" class="slink"><span class="etd_d">膀胱癌血液和組織樣本DNA甲基化生物標記的表現評估比較分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／113／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:黃士儼</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<font class="fullfont">電子全文</font>(<font class="fullhight_light">網際網路公開日期：20260810</font>)
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:55</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel4" value="1"><input type=checkbox id="sel4" value="1" name="sel4" value="1" onclick="checker('0', 'sel4','4', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">4.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=4&h1=3" class="slink"><span class="etd_d">混合預測模型於醫藥銷售預測的應用</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧與大數據高階管理雙聯碩士學位學程／113／碩士／電算機學門／電算機應用學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:王笙</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJ%5BGSZH&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJ%5BGSZH&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:81</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:11</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel5" value="1"><input type=checkbox id="sel5" value="1" name="sel5" value="1" onclick="checker('0', 'sel5','5', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">5.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=5&h1=3" class="slink"><span class="etd_d">應用側面步態評估幼兒粗大動作發展之自動化分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧科技碩士學位學程／113／碩士／電算機學門／軟體發展學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:黃品宥</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOUK&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOUK&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:148</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:26</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel6" value="1"><input type=checkbox id="sel6" value="1" name="sel6" value="1" onclick="checker('0', 'sel6','6', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">6.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=6&h1=3" class="slink"><span class="etd_d">基於深度學習和影像增強技術應用於下肢水腫檢測與等級分類之研究</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧科技碩士學位學程／113／碩士／電算機學門／軟體發展學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:胡庭瑋</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOV%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOV%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:59</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:6</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel7" value="1"><input type=checkbox id="sel7" value="1" name="sel7" value="1" onclick="checker('0', 'sel7','7', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">7.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=7&h1=3" class="slink"><span class="etd_d">基於 ViT 和 Attention Bi-LSTM 的數位 病理影像分類方法及其對細胞異常檢測的 應用</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／113／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:楊哲綸</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNZG&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNZG&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:85</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:19</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel8" value="1"><input type=checkbox id="sel8" value="1" name="sel8" value="1" onclick="checker('0', 'sel8','8', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">8.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=8&h1=3" class="slink"><span class="etd_d">基於FastGAN加入輔助分類器提升尿液細胞影像合成質量與可控性</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧科技碩士學位學程／113／碩士／電算機學門／軟體發展學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:林俐雯</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOUH&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOUH&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:38</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:7</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel9" value="1"><input type=checkbox id="sel9" value="1" name="sel9" value="1" onclick="checker('0', 'sel9','9', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">9.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=9&h1=3" class="slink"><span class="etd_d">糖尿病腎病變之DNA甲基化生物標記分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／113／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:陳維鈞</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNZI&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNZI&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:84</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:12</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel10" value="1"><input type=checkbox id="sel10" value="1" name="sel10" value="1" onclick="checker('0', 'sel10','10', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">10.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=10&h1=3" class="slink"><span class="etd_d">基於類神經網路之可解釋性方法應用於疾病共病預測</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／113／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:林煥智</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNW_&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDOTbNW_&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:72</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:17</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel11" value="1"><input type=checkbox id="sel11" value="1" name="sel11" value="1" onclick="checker('0', 'sel11','11', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">11.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=11&h1=3" class="slink"><span class="etd_d">甲基化基因生物標記應用於大腸直腸癌之預測分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧與大數據高階管理雙聯碩士學位學程／113／碩士／電算機學門／電算機應用學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:黃芬緯</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<font class="fullfont">電子全文</font>(<font class="fullhight_light">網際網路公開日期：20300804</font>)
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:44</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel12" value="1"><input type=checkbox id="sel12" value="1" name="sel12" value="1" onclick="checker('0', 'sel12','12', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">12.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=12&h1=3" class="slink"><span class="etd_d">使用步態特徵進行幼兒粗大動作發展之自動分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧科技碩士學位學程／113／碩士／電算機學門／軟體發展學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:蔡嘉銨</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOW%5C&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5E%7DOW%5C&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:266</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:43</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel13" value="1"><input type=checkbox id="sel13" value="1" name="sel13" value="1" onclick="checker('0', 'sel13','13', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">13.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=13&h1=3" class="slink"><span class="etd_d">新冠疫情對美國肺部疾病醫療器械之召回根因關聯規則分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧與大數據高階管理雙聯碩士學位學程／113／碩士／電算機學門／電算機應用學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:黃士銘</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5CJV%5EO&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDS%7Dld%5CDO%5CJV%5EO&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:67</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:11</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel14" value="1"><input type=checkbox id="sel14" value="1" name="sel14" value="1" onclick="checker('0', 'sel14','14', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">14.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=14&h1=3" class="slink"><span class="etd_d">比較機器學習預測呼吸器相關肺炎死亡率與特徵分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧與大數據高階管理雙聯碩士學位學程／112／碩士／電算機學門／電算機應用學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:余承翰</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJ%5BGS%5B%5D&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJ%5BGS%5B%5D&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:102</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:28</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel15" value="1"><input type=checkbox id="sel15" value="1" name="sel15" value="1" onclick="checker('0', 'sel15','15', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">15.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=15&h1=3" class="slink"><span class="etd_d">以手繪圖形影像評估兒童精細動作之自動辨識機制</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／112／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:黃乃軒</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KKQ&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KKQ&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:220</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:35</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel16" value="1"><input type=checkbox id="sel16" value="1" name="sel16" value="1" onclick="checker('0', 'sel16','16', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">16.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=16&h1=3" class="slink"><span class="etd_d">基於動作特徵自動辨識嬰兒之粗大動作發展輔助評估研究</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／112／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:楊尹彰</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KNR&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KNR&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:260</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:42</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel17" value="1"><input type=checkbox id="sel17" value="1" name="sel17" value="1" onclick="checker('0', 'sel17','17', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">17.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=17&h1=3" class="slink"><span class="etd_d">基於深度學習技術應用於下肢水腫不同等級之自動分類</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧科技碩士學位學程／112／碩士／電算機學門／軟體發展學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:林祐靖</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJYxLUa&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJYxLUa&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:177</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:17</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel18" value="1"><input type=checkbox id="sel18" value="1" name="sel18" value="1" onclick="checker('0', 'sel18','18', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">18.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=18&h1=3" class="slink"><span class="etd_d">基於CycleGAN恆等損失函數改進數位病理影像的染色正規化效果</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／112／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:陳榮庭</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KOO&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KOO&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:151</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:20</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel19" value="1"><input type=checkbox id="sel19" value="1" name="sel19" value="1" onclick="checker('0', 'sel19','19', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">19.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=19&h1=3" class="slink"><span class="etd_d">基於耳機蒐集的心跳速率與六軸慣性訊號 以機器學習模組辨識睡眠期別</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧與大數據高階管理雙聯碩士學位學程／112／碩士／電算機學門／電算機應用學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:林宛佳</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJ%5BGS%5B%60&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJ%5BGS%5B%60&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:118</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:16</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel20" value="1"><input type=checkbox id="sel20" value="1" name="sel20" value="1" onclick="checker('0', 'sel20','20', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">20.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=20&h1=3" class="slink"><span class="etd_d">氣泡瑕疵自動檢測與修復實現應用於 IHC 數位病理影像</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／112／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:韓靖</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KOK&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDR%82%7BiYaJc_KOK&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:158</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:17</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel21" value="1"><input type=checkbox id="sel21" value="1" name="sel21" value="1" onclick="checker('0', 'sel21','21', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">21.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=21&h1=3" class="slink"><span class="etd_d">聯邦式學習模型應用於乳癌數位病理影像分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／111／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:黃宥勛</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHLH&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHLH&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:<a href="#XXX" title="引用此筆資料列表" onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=111TIT00392044', 'quotelnk')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=111TIT00392044', 'quotelnk')}" >1</a></li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:202</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:30</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:2</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel22" value="1"><input type=checkbox id="sel22" value="1" name="sel22" value="1" onclick="checker('0', 'sel22','22', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">22.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=22&h1=3" class="slink"><span class="etd_d">心臟衰竭患者六分鐘步行測試之特徵分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／111／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:簡旭均</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHRW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHRW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:204</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:34</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel23" value="1"><input type=checkbox id="sel23" value="1" name="sel23" value="1" onclick="checker('0', 'sel23','23', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">23.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=23&h1=3" class="slink"><span class="etd_d">基於電腦叢集的疾病基因關聯查詢系統及疾病相似度分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／111／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:梁博瑜</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHS%60&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHS%60&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:130</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:13</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel24" value="1"><input type=checkbox id="sel24" value="1" name="sel24" value="1" onclick="checker('0', 'sel24','24', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">24.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=24&h1=3" class="slink"><span class="etd_d">透過彈性主樹揭示肌萎縮性側索硬化症之疾病發展</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／111／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:吳陽生</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHSa&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHSa&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:123</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:3</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel25" value="1"><input type=checkbox id="sel25" value="1" name="sel25" value="1" onclick="checker('0', 'sel25','25', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">25.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=25&h1=3" class="slink"><span class="etd_d">通過組合超級公式和生成對抗網路資料擴增技術提升蘋果樹葉疾病之圖像分割</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／電資學院外國學生專班(iEECS)／111／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:Bhat Mahmood Hussain</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EIczFN%5E&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EIczFN%5E&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:79</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:2</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel26" value="1"><input type=checkbox id="sel26" value="1" name="sel26" value="1" onclick="checker('0', 'sel26','26', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">26.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=26&h1=3" class="slink"><span class="etd_d">綜整SMOTE與WCGAN-GP技術強化小型表格臨床試驗之混合資料擴增</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／人工智慧與大數據高階管理雙聯碩士學位學程／111／碩士／電算機學門／電算機應用學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:王星文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60U%5DMTY&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60U%5DMTY&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:254</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:5.0--><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:37</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel27" value="1"><input type=checkbox id="sel27" value="1" name="sel27" value="1" onclick="checker('0', 'sel27','27', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">27.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=27&h1=3" class="slink"><span class="etd_d">使用比例式 Jaccard 指標辨識共病樣式及預測罹患心臟衰竭之高風險患者</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／111／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:唐岳</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHPT&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHPT&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:126</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:1</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:1</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel28" value="1"><input type=checkbox id="sel28" value="1" name="sel28" value="1" onclick="checker('0', 'sel28','28', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">28.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=28&h1=3" class="slink"><span class="etd_d">以機器學習分析醫療紀錄的時間屬性以預測心臟衰竭之風險</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／111／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:彭柏誠</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHP%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHP%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:229</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:1</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:1</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel29" value="1"><input type=checkbox id="sel29" value="1" name="sel29" value="1" onclick="checker('0', 'sel29','29', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">29.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=29&h1=3" class="slink"><span class="etd_d">使用小波分析與波峰偵測輔助運動週期性呼吸之判斷</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:倪嘉言</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHPY&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EE%5EXHPY&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:164</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:24</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel30" value="1"><input type=checkbox id="sel30" value="1" name="sel30" value="1" onclick="checker('0', 'sel30','30', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">30.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=30&h1=3" class="slink"><span class="etd_d">An Integrated Approach For Uncovering Novel DNA Methylation Biomarkers For Non-small Cell Lung Carcinoma</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／電資學院外國學生專班(iEECS)／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:VAIBHAV KUMAR SUNKARIA</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EIczFNW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDQwv%7EV%5EIczFNW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:334</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:3</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel31" value="1"><input type=checkbox id="sel31" value="1" name="sel31" value="1" onclick="checker('0', 'sel31','31', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">31.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=31&h1=3" class="slink"><span class="etd_d">Identification and Comparison of DNA Methylation Biomarkers for Kidney Renal Clear Cell Carcinoma and Renal Papillary Cell Carcinoma</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／電資學院外國學生專班(iEECS)／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:VINOTHINI SIVARAMAKRISHNAN</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%5C%60ycKJ&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%5C%60ycKJ&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:183</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:5</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel32" value="1"><input type=checkbox id="sel32" value="1" name="sel32" value="1" onclick="checker('0', 'sel32','32', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">32.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=32&h1=3" class="slink"><span class="etd_d">互動式病理組織影像之細胞核檢測系統</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:許邦毅</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUESF&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUESF&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:158</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:13</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:1</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel33" value="1"><input type=checkbox id="sel33" value="1" name="sel33" value="1" onclick="checker('0', 'sel33','33', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">33.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=33&h1=3" class="slink"><span class="etd_d">嬰幼兒神經發展之適應性評估追蹤系統</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:何韋辰</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUEQb&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUEQb&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:688</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:38</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel34" value="1"><input type=checkbox id="sel34" value="1" name="sel34" value="1" onclick="checker('0', 'sel34','34', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">34.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=34&h1=3" class="slink"><span class="etd_d">使用類 U-Net 架構進行乳癌區域 辨識的跨染色組織病理學影像分割</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:歐陽緒</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUENV&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUENV&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:215</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:29</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:1</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel35" value="1"><input type=checkbox id="sel35" value="1" name="sel35" value="1" onclick="checker('0', 'sel35','35', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">35.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=35&h1=3" class="slink"><span class="etd_d">基於引導式對話之學齡前兒童語言能力分析</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:黃彥穎</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUENc&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUENc&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:274</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:38</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:1</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel36" value="1"><input type=checkbox id="sel36" value="1" name="sel36" value="1" onclick="checker('0', 'sel36','36', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">36.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=36&h1=3" class="slink"><span class="etd_d">動態顏色反卷積系統應用於H&E影像染色分離</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／110／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:張育瑞</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUENW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BDPtu%83S%5B%60%5DUENW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:303</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:20</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel37" value="1"><input type=checkbox id="sel37" value="1" name="sel37" value="1" onclick="checker('0', 'sel37','37', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">37.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=37&h1=3" class="slink"><span class="etd_d">企業財務表單文件影像分析及資料擷取</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／109／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:羅芸岑</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DK%5C&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DK%5C&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a><br><img src="/gs32/nclcdr//image/book1-open.png" alt="國圖紙本論文" title="國圖紙本論文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick=" winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004941833') " onkeypress="evt = event || window.event; if (evt.keyCode == 13){ winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004941833') }"  title="國圖紙本論文">國圖紙本論文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:<a href="#XXX" title="引用此筆資料列表" onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=109TIT00392063', 'quotelnk')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=109TIT00392063', 'quotelnk')}" >1</a></li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:286</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:5</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel38" value="1"><input type=checkbox id="sel38" value="1" name="sel38" value="1" onclick="checker('0', 'sel38','38', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">38.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=38&h1=3" class="slink"><span class="etd_d">基於BERT語言模型之衛教機器人對話系統</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／109／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:楊亞政</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DK_&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DK_&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a><br><img src="/gs32/nclcdr//image/book1-open.png" alt="國圖紙本論文" title="國圖紙本論文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick=" winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004941249') " onkeypress="evt = event || window.event; if (evt.keyCode == 13){ winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004941249') }"  title="國圖紙本論文">國圖紙本論文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:<a href="#XXX" title="引用此筆資料列表" onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=109TIT00392060', 'quotelnk')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=109TIT00392060', 'quotelnk')}" >2</a></li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:507</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:148</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:2</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel39" value="1"><input type=checkbox id="sel39" value="1" name="sel39" value="1" onclick="checker('0', 'sel39','39', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">39.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=39&h1=3" class="slink"><span class="etd_d">疾病軌跡路徑分析與相對風險指標預測</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／109／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:蔣維</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DIW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DIW&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a><br><img src="/gs32/nclcdr//image/book1-open.png" alt="國圖紙本論文" title="國圖紙本論文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick=" winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004911618') " onkeypress="evt = event || window.event; if (evt.keyCode == 13){ winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004911618') }"  title="國圖紙本論文">國圖紙本論文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:685</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:5.0--><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:44</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:1</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel40" value="1"><input type=checkbox id="sel40" value="1" name="sel40" value="1" onclick="checker('0', 'sel40','40', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">40.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=40&h1=3" class="slink"><span class="etd_d">中文語音文字線上情緒辨識及應用</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／109／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:彭正鈦</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DI%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DI%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a><br><img src="/gs32/nclcdr//image/book1-open.png" alt="國圖紙本論文" title="國圖紙本論文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick=" winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004911328') " onkeypress="evt = event || window.event; if (evt.keyCode == 13){ winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004911328') }"  title="國圖紙本論文">國圖紙本論文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:<a href="#XXX" title="引用此筆資料列表" onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=109TIT00392042', 'quotelnk')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/nclcdrbequote?dbid=109TIT00392042', 'quotelnk')}" >2</a></li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:1442</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:3.66666666667--><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-half.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:170</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:1</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr ><td class="tdfmt1-first"><label for="sel41" value="1"><input type=checkbox id="sel41" value="1" name="sel41" value="1" onclick="checker('0', 'sel41','41', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/getchecker')"></label></td><td nowrap class="tdfmt1-second">41.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tr>
+    <td colspan=2 id="simplefmt2td" style="display:none">simplefmt2td</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2><a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/record?r1=41&h1=3" class="slink"><span class="etd_d">以手環及生物特徵預測心臟衰竭患者未來風險</span></a></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>國立臺北科技大學／資訊工程系／109／碩士／工程學門／電資工程學類</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>研究生:譚榮棋</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>指導教授:<font class=inverse>白敦文</font></td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>論文種類 : 學術論文</td></tr><tr>
+    <td headers="simplefmt2td" class="std2" colspan=2>
+<!-- totalfunc-start -->
+<img src="/gs32/nclcdr//image/book-open.png" alt="電子全文" title="電子全文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick="window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DF%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')" onkeypress="evt = event || window.event; if (evt.keyCode == 13){window.open('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fulltextdeclare?dbid=%5BEDl%7D%7BKSXEM%5DF%5B&imgtype=', '_blank', 'width=700,height=500,top=100,left=100,scrollbars=yes,resizable=yes')}"  title="電子全文">電子全文</a><br><img src="/gs32/nclcdr//image/book1-open.png" alt="國圖紙本論文" title="國圖紙本論文" width="16" height="16"  align="absmiddle" />&nbsp;<a href="#XXX"  onclick=" winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004911073') " onkeypress="evt = event || window.event; if (evt.keyCode == 13){ winopen('alewin', 'https://aleweb.ncl.edu.tw/F?func=item-global&doc_library=TOP02&doc_number=004911073') }"  title="國圖紙本論文">國圖紙本論文</a>
+<!-- totalfunc-end -->
+</td></tr><tr>
+    <td headers="simplefmt2td" colspan=2>
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="/gs32/images/hotgifs/quote.png" alt="被引用" class="hotsortfocusimg">被引用:0</li><li ><img src="/gs32/images/hotgifs/target.png" alt="點閱" class="hotsortfocusimg">點閱:189</li><li class="starli"><img src="/gs32/images/hotgifs/star.png" alt="評分" class="hotsortfocusimg">評分:<!--scrore:0--><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /><img src="/gs32/images/hotgifs/star-small-empty.png" width="8" align="absmiddle" alt="" /></li><li ><img src="/gs32/images/hotgifs/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:32</li><li ><img src="/gs32/images/hotgifs/folder-horizontal-open.png" alt="收藏至我的研究室書目清單" class="hotsortfocusimg">書目收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+</table>
+
+
+
+<table cellspacing=0 width="100%"></tr>
+<tr><td width="100%" align="right">
+<table><tr><td>
+  
+<td><img src="/gs32/nclcdr/image/gofirst_.gif" border="0" alt="第一頁"></td>
+<td><img src="/gs32/nclcdr/image/goprev_.gif" border="0" alt="上一頁"></td>
+<td><img src="/gs32/nclcdr/image/gonext_.gif" border="0" alt="下一頁"></td>
+<td><img src="/gs32/nclcdr/image/golast_.gif" border="0" alt="最後一頁"></td>
+<td><a href="#gotocenter" title="top">top</a></td>
+</td></tr></table>
+</tr></table>
+
+
+<input type=hidden name=searchlist value="1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41">
+<input type=hidden name=r1 value="1">
+<input type=hidden name=d1 value="0">
+<input type=hidden name=h1 value="3">
+
+<input type=hidden name=option value="">
+
+
+
+</td></tr>
+
+</table>
+
+
+      </div>
+      <!--end of .cont_l2 -->
+
+
+
+<div class="cont_r2">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="border_cube">
+
+    <tr> <td height="10"></td> </tr>
+
+<tr><td>
+
+
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+<tr><td>
+
+<script>
+YAHOO.example.outputresult = function() {
+   var myTabs = new YAHOO.widget.TabView('gs32_outputresult');
+     myTabs.on('contentReady', function() {
+
+    this.getTab(0).addListener('keypress', handleClick=function(e){
+    var keyCode = e.keyCode;
+    if (keyCode == '13'){
+        myTabs.set('activeIndex', 0);
+    }});
+
+
+
+
+
+    this.getTab(1).addListener('keypress', handleClick=function(e){
+    var keyCode = e.keyCode;
+    if (keyCode == '13'){
+        myTabs.set('activeIndex', 1);
+
+showInfo_htm('keyarea','/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/refine_area', '資料載入處理中...')
+    }
+    });
+
+    try{
+    this.getTab(1).addListener('click', handleClick=function(e){
+showInfo_htm('keyarea','/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/refine_area', '資料載入處理中...')
+   });
+
+    } catch (err) {}
+
+
+
+
+
+
+
+    try{
+    this.getTab(2).addListener('keypress', handleClick=function(e){
+    var keyCode = e.keyCode;
+    if (keyCode == '13'){
+        myTabs.set('activeIndex', 2);
+winopen('tmpwin2', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/subjectmapd3?lv=1&init=1', '615/600/200/100')
+    }});
+
+    } catch (err) {}
+
+    try{
+    this.getTab(2).addListener('click', handleClick=function(e){
+winopen('tmpwin2', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/subjectmapd3?lv=1&init=1', '615/600/200/100')
+   });
+
+   } catch (err) {}
+
+
+
+
+    try{
+    this.getTab(3).addListener('keypress', handleClick=function(e){
+    var keyCode = e.keyCode;
+    if (keyCode == '13'){
+        myTabs.set('activeIndex', 3);
+showInfo_htm('clusterarea','/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/clusterarea', '資料載入處理中...')
+    }});
+
+    } catch (err) {}
+
+
+ 
+    try{
+    this.getTab(3).addListener('click', handleClick=function(e){
+showInfo_htm('clusterarea','/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/clusterarea', '資料載入處理中...')
+    });
+    } catch (err) {}
+
+
+   });
+};
+
+YAHOO.example.outputresult();
+</script>
+
+
+<div id="gs32_outputresult" class="yui-navset">
+
+<ul class="yui-nav">
+<li class="selected"><a href="#XX" title=""><em>輸出管理</em></a></li>
+<li><a href="#XX" title="result"><em>查詢結果分類</em></a></li>
+<li><a href="#XX" title="主題知識地圖"><em>主題知識地圖</em></a></li>
+<li><a href="#XX" title="聚類分析"><em>聚類分析</em></a></li>
+</ul>
+
+<div class="yui-content">
+
+<div id="輸出管理">
+<!-- nclcdr/_seloutput.htm -->
+
+
+
+<script>
+YAHOO.example.myinit = function() {
+   var myTabs = new YAHOO.widget.TabView('seloutputmenu');
+     myTabs.on('contentReady', function() { 
+
+ tab0 = myTabs.getTab(0);
+
+     function handleClick0(e) {
+     }
+         
+tab0.addListener('click', handleClick0);
+     });
+};
+
+YAHOO.example.myinit();
+</script>
+
+<style type="text/css">
+
+/* Tabmenu 包含整個(index tab)上方區塊 style */
+#seloutputmenu .yui-nav{
+border:solid #737374;
+border-width:0 0 3px 0;
+Xposition:relative;
+zoom:1;
+background:#FFFFFF;
+margin-top:2px;
+}
+/* Tabmenu (index tab)選項之間的間距 */
+#seloutputmenu .yui-nav li{
+margin:0px;
+padding:0 1px 0 0;
+print 'font-size:80%'
+}
+/* Tabmenu (index tab)選項 選擇後的效果 */
+#seloutputmenu .selected a, #seloutputmenu .selected a:focus, #seloutputmenu .selected a:hover
+{
+background: #D7D6D6 url('/gs32/images/cssgif/tabind003.gif') repeat-x bottom !important;
+}
+/* Tabmenu (index tab)選項 移過去 a:hover 效果 */
+#seloutputmenu a:hover{
+background:#C98F8F !important;
+margin:0px;
+padding:0px;
+}
+/* Table menu 下方的div 區塊 style */
+#seloutputmenu .yui-content {
+padding:1px;
+border:solid #808080;
+border-width: 0px;
+min-height:100px;
+/** 輸出區塊.設成0px.不能將此值設成important否則裡面的tabview border都會被設成此屬性 **/ 
+}
+
+</style>
+
+<table class="tmaintd" width="100%">
+
+<tr><td>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+     <td width="20" align="center" bgcolor="#f0ebe0" id="outputrecs">
+     <img src="/gs32/nclcdr/image/arrow-315-small.png" alt="" width="16" height="20" align="absbottom" /></td>
+     <td headers="outputrecs" align="left" bgcolor="#f0ebe0">輸出紀錄&nbsp;(輸出上限：50筆)</td>
+     </tr>
+
+<ul>
+
+     <tr><td headers="outputrecs" align="center">&nbsp;</td>
+     <td headers="outputrecs" align="left">
+      
+<label for="crange"><input type=radio id=crange name=crange value=1 checked>勾選紀錄</label>(<span id="stenow">0</span>)筆
+
+     </td>
+     </tr>
+      
+
+     <tr><td headers="outputrecs" align="center">&nbsp;</td>
+     <td headers="outputrecs" align="left">
+      
+<label for="crange2"><input type=radio id=crange2 name=crange value=2>所有勾選紀錄</label>(<span id="stetotal">0</span>)筆
+
+     </td>
+     </tr>
+      
+
+     <tr><td headers="outputrecs" align="center">&nbsp;</td>
+     <td headers="outputrecs" align="left">
+      
+<label for="crange3"><input type=radio id=crange3 name=crange value=3 >此次策略紀錄</label>(<span>41</span>)筆
+
+     </td>
+     </tr>
+      
+
+
+
+
+
+     <tr>
+     <td headers="outputrecs" height="3" colspan="2"></td>
+     </tr>
+
+
+
+     <tr>
+     <td headers="outputrecs" width="20" align="center" bgcolor="#f0ebe0">
+     <img src="/gs32/nclcdr/image/arrow-315-small.png" alt="" width="16" height="20" align="absbottom" /></td>
+     <td headers="outputrecs" align="left" bgcolor="#f0ebe0">輸出欄位 (完整欄位請先登入國圖會員帳號)</td>
+     </tr>
+
+
+
+     
+
+  <tr><td headers="outputrecs" align="center">&nbsp;</td>
+  <td headers="outputrecs" align="left">
+<label for="cfield1">
+<input type=radio id="cfield1" name=cfield value=1 checked onclick="onselectdivenable()">簡易書目
+</label>
+  </td>
+  </tr>
+
+
+
+  <tr><td headers="outputrecs" align="center">&nbsp;</td>
+  <td headers="outputrecs" align="left">
+<label for="cfield2">
+<input type=radio id="cfield2" name=cfield value=2 onclick="onselectdivenable()">完整書目
+</label>
+  </td>
+  </tr>
+      
+
+ <tr><td align="center">&nbsp;</td>
+ <td align="left">
+<label for="cfield3">
+<input type=radio id="cfield3" name=cfield value=3 onclick="onselectdivenable()"><a href="javascript:openfsel('/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/fieldsel')" class=mainlink>自訂欄位</a>
+</label>
+ </td>
+ </tr>
+      
+
+
+     <tr>
+     <td headers="outputrecs" width="20" align="center" bgcolor="#f0ebe0">
+     <img src="/gs32/nclcdr/image/arrow-315-small.png" alt="" width="16" height="20" align="absbottom" /></td>
+     <td headers="outputrecs" align="left" bgcolor="#f0ebe0">書目資料輸出格式</td>
+     </tr>
+
+ <tr><td headers="outputrecs" align="center">&nbsp;</td>
+ <td headers="outputrecs" align="left">
+ <label for="cfield4">
+ <input type=radio name=cfield id="cfield4" value=4 onclick="onselectdivdisable()">APA Style
+ </label>
+ </td>
+ </tr> 
+  <tr><td headers="outputrecs" align="center">&nbsp;</td>
+ <td headers="outputrecs" align="left">
+ <label for="cfield5">
+ <input type=radio name=cfield id="cfield5" value=5 onclick="onselectdivdisable()">Chicago (Turabian) Style
+ </label>
+ </td>
+ </tr> 
+  <tr><td headers="outputrecs" align="center">&nbsp;</td>
+ <td headers="outputrecs" align="left">
+ <label for="cfield6">
+ <input type=radio name=cfield id="cfield6" value=6 onclick="onselectdivdisable()">MLA Style
+ </label>
+ </td>
+ </tr> 
+  <tr><td headers="outputrecs" align="center">&nbsp;</td>
+ <td headers="outputrecs" align="left">
+ <label for="cfield7">
+ <input type=radio name=cfield id="cfield7" value=7 onclick="onselectdivdisable()">CNS-13611 Style
+ </label>
+ </td>
+ </tr> 
+  <tr><td headers="outputrecs" align="center">&nbsp;</td>
+ <td headers="outputrecs" align="left">
+ <label for="cfield8">
+ <input type=radio name=cfield id="cfield8" value=8 onclick="onselectdivdisable()">CSE Style
+ </label>
+ </td>
+ </tr> 
+  <tr><td headers="outputrecs" align="center">&nbsp;</td>
+ <td headers="outputrecs" align="left">
+ <label for="cfield9">
+ <input type=radio name=cfield id="cfield9" value=9 onclick="onselectdivdisable()">RIS format(EndNote、RefWorks...)
+ </label>
+ </td>
+ </tr> 
+ 
+
+
+     <tr>
+     <td headers="outputrecs" width="20" align="center" bgcolor="#f0ebe0">
+     <img src="/gs32/nclcdr/image/arrow-315-small.png" alt="" width="16" height="20" align="absbottom" /></td>
+     <td headers="outputrecs" align="left" bgcolor="#f0ebe0">輸出字碼</td>
+     </tr>
+   
+     <tr>
+<td headers="outputrecs" align="center">&nbsp;</td>
+<td headers="outputrecs">
+<label for="char_fmt_utf8"> 
+<input type="radio" id="char_fmt_utf8" name="char_fmt" value="utf8" checked>UTF-8<br>
+</label>
+<label for="char_fmt_big5">
+<input type="radio" id="char_fmt_big5" name="char_fmt" value="big5">BIG5<br>
+</label>
+<label for="char_fmt_gb2312">
+<input type="radio" id="char_fmt_gb2312" name="char_fmt" value="gb2312">GB2312
+</label>
+     </td></tr>
+
+     <tr>
+     <td headers="outputrecs" height="3" colspan="2"></td>
+     </tr>
+
+</table>
+
+<script>
+YAHOO.example.outmailbrw = function() {
+   var myTabs = new YAHOO.widget.TabView('gs32_outmailbrw');
+     myTabs.on('contentReady', function() {
+   });
+};
+
+YAHOO.example.outmailbrw();
+</script>
+
+
+<div id="gs32_outmailbrw" class="yui-navset">
+    <ul class="yui-nav">
+
+<!---  seloutput LEVEL1 TITLE --->
+        <li class="selected"><a href="#XX"><label for="outfmt"><em>輸出</em></label></a></li>
+<!---  seloutput LEVEL2 TITLE --->
+
+
+
+<li><a href="#XX"><em>我的書目收藏</em></a></li>
+
+
+
+
+<!---  seloutput LEVEL3 TITLE --->
+        <li><a href="#XX"><em>轉寄</em></a></li>
+<!---  seloutput LEVEL4 TITLE 預覽 --->
+
+<!---  預覽及輸出 --->
+<li><a href="#XX"><em>預覽及輸出</em></a></li>
+    </ul>
+
+
+    <div class="yui-content">
+<!---  seloutput LEVEL1 TITLE --->
+        <div>
+
+<select name=outfmt id=outfmt>
+<option value=txt>TXT檔
+<option value=xls>Excel
+<option value=ods>ods
+<option value=csv>CSV 檔
+<option value=htm>HTML檔
+<!--
+<option value=xml>Xml
+-->
+<option value=ncliso>iso2709
+<!--<option value=ncliso_marc21>iso2709 marc21-->
+</select>
+
+<input type=button class=button name=savefmt value="儲存" onclick="savefmtfunc(0 , 6, '無本次檢索勾選紀錄!', '無所有勾選紀錄!', '', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/resmage', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/history');">
+
+        </div>
+
+
+<!---  seloutput LEVEL2 TITLE --->
+<div id="personmyres">
+<br><br>新增目錄：<input type=text name=newitem id=newitem value="">
+
+<input type=button class=button onclick="savemyres('0', 'personal', 'myresource', 'tagfld', '請勾選至少一筆資源加入此項目!', '請選擇勾選轉入收藏目錄或新增書目清單分類!',
+  '已為您將所勾選的書目紀錄儲存於「我的研究室」的「我的書目收藏」中，敬請參考、利用。', '', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/savemyres')" value="儲存" name="svper">
+      
+<input type=hidden name="personal" value="">
+</div>
+
+
+
+<!---  seloutput LEVEL3 TITLE --->
+        <div>
+
+<label for="eaddr">
+<span class="gs32sys_span01">Email地址:</span>
+</label>
+<input type=text id=eaddr name=eaddr size=20>
+<br>
+<label for="etitle">
+<span class="gs32sys_span01">Email標題:</span>
+</label>
+<input type=text id=etitle name=etitle size=20><br>
+<label for="sendmail"><input type=button class=button id=sendmail name=sendmail value="確定" onclick="mailfmtfunc(0, 6, '無本次檢索勾選紀錄!', '無所有勾選紀錄!', '請輸入Email標題', '請輸入Email地址', '', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/resmage', '信件已寄送')">
+</label>
+        </div>
+
+<!---  seloutput LEVEL4 TITLE --->
+
+
+
+        <div>
+<input type=button class=button name=preview value="全螢幕預覽" onclick="brwfmtfunc(0, 6, '無本次檢索勾選紀錄!', '無所有勾選紀錄!', '&outfmt=htm', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/previewsave')"    onkeypress="brwfmtfunc(0, 6, '無本次檢索勾選紀錄!', '無所有勾選紀錄!', '&outfmt=htm', '/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/previewsave')"  >
+        </div>
+
+
+
+</div>
+
+</div>   <!-- _seloutput_resultbrw.htm -->
+
+<div id="retoutfmt">
+</div>
+
+
+</td></tr>
+</table>
+
+
+<div id="checker_buffer">
+<input type=hidden name="stenownum" id="stenownum" value="0">
+<input type=hidden name="stetotalnum" id="stetotalnum" value="0">
+</div>
+
+<script type="text/javascript">
+  YAHOO.namespace("example.container");
+  YAHOO.example.container.tt2 = new YAHOO.widget.Tooltip("tt2",
+   { context:"linkgrpins", text:"Scupio group Readme"});
+</script>
+
+</div>
+
+<div id="查詢結果分類">
+<div id="keyarea" style="float:left;">
+</div><!--keyarea-->
+</div>
+
+
+<div>以圖形方式呈現此查詢結果的主題知識地圖，以二層式的方式呈現，中心點為本次的查詢詞，第一層顯示與查詢詞最相關的五個關鍵詞，點選單一關鍵詞後，再以此關鍵詞為中心，顯示五個最相關的關鍵詞。</div>
+<div id="clusterarea">Cluster analysis ins</div>
+
+</div>
+
+
+</td></tr></table>
+
+
+</td></tr>
+
+    <tr> <td height="10"></td> </tr>
+
+</table>
+
+
+      </div>
+      <!--end of .cont_r2 -->
+
+
+
+
+
+
+
+   </td>
+</tr>
+
+</div>
+
+<input type=hidden name=opt value=m>
+
+
+
+          <tr>
+            <td><div class="footnav">
+			<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td><img src="/gs32/nclcdr/image/etds_footnav_l.gif" alt="" width="22" height="22" /></td>
+    <td bgcolor="#BABABA">
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/search?mode=basic" title="簡易查詢">簡易查詢</a>&nbsp;|
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/search?mode=advance" title="進階查詢">進階查詢</a>&nbsp;|
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/gsimpactbrw?init=1&date=114" title="熱門排行">熱門排行</a>&nbsp;|
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=AmMVgc/dispatchpersonal?menuid=personal" title="我的研究室">我的研究室</a>
+<br>
+</td>
+    <td><img src="/gs32/nclcdr/image/etds_footnav_r.gif" alt="" width="22" height="22" /></td>
+  </tr>
+</table>
+</div></td>
+          </tr>
+          <tr>
+            <td>
+
+
+
+
+<div class="footer">
+本系統(Web3)共收集：論文已授權全文：<span class=etd_e>831360</span> 筆、書目與摘要：<span class=etd_e>1531270</span> 筆<br>目前上線人數：<span class=etd_e title="25__費時：27.3173229694秒">17940</span>&nbsp;／&nbsp;訪客人次（自99年6月）：<span class=etd_e>805316176</span>&nbsp;／&nbsp;檢索次數（自99年6月）：<span class=etd_e>6891805810</span>&nbsp;／&nbsp;指導單位： <a href="http://www.edu.tw" target=_blank rel="noopener noreferrer" title="教育部高等教育司(另開新視窗)">教育部</a><br>國家圖書館著作權聲明 Copyright © 2010 All rights reserved.<br>本館地址：100201 臺北市中山南路20號 電話：02-2361-9132 （本系統服務窗口請轉分機 172、870）<br>本網站最佳瀏覽解析度為 1600 x 900
+
+
+<br>
+<a href="https://accessibility.moda.gov.tw/Applications/Detail?category=20210629174448" title="無障礙網站(另開新視窗)" rel="noopener noreferrer" target="_blank">
+<img src="/gs32/nclcdr/image/aplus_2a.jpg" border="0" width="88" height="31" alt="無障礙網站">
+</a>
+    
+</div>
+
+</td>
+          </tr>
+        </table></td>
+      <td width="10" background="/gs32/nclcdr/image/etds_mbg_r.gif" alt=""></td>
+    </tr>
+    <tr>
+      <td width="10" height="11"><img src="/gs32/nclcdr/image/etds_mbg_lb.gif" width="10" alt="" height="11" /></td>
+      <td height="11" background="/gs32/nclcdr/image/etds_mbg_b.gif" alt=""></td>
+      <td width="10" height="11"><img src="/gs32/nclcdr/image/etds_mbg_rb.gif" width="10" height="11" alt="" /></td>
+    </tr>
+  </table>
+</div><!--end of .etds_mainbd --> 
+
+<!-- _google_analysis.htm  -->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16875488-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+
+
+
+<input type=hidden name=_status_ value="searchresult">
+</form>
+
+<iframe name="splink" id="splink" title="splink" width="0" height="0"
+  style="visibility: hidden; inline: none;">
+</iframe>
+<div id="gs32sysids">
+</div>
+</body>
+</html>
