@@ -1,0 +1,9 @@
+{%- comment -%} 計算畢業生、計畫數與研究年數，供頁面使用（變數：stat_total、stat_phd、stat_ms、stat_projects、stat_years） {%- endcomment -%}
+{%- assign stat_total = 0 -%}{%- assign stat_phd = 0 -%}
+{%- for g in site.data.alumni -%}
+  {%- assign stat_total = stat_total | plus: g.graduates.size -%}
+  {%- for a in g.graduates -%}{%- if a.degree == "phd" -%}{%- assign stat_phd = stat_phd | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- endfor -%}
+{%- assign stat_ms = stat_total | minus: stat_phd -%}
+{%- assign stat_projects = site.data.projects.size -%}
+{%- assign stat_years = site.time | date: "%Y" | minus: site.lab.founded -%}

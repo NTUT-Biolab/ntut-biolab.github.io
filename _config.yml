@@ -1,0 +1,52 @@
+# ─────────────────────────────────────────────────────────────
+#  NTUT 生醫資訊實驗室網站設定
+#  修改本檔後，GitHub Pages 會自動重新建置（約 1–2 分鐘）。
+# ─────────────────────────────────────────────────────────────
+
+title: 生醫資訊實驗室
+url: "https://ntut-biolab.github.io"
+baseurl: ""
+timezone: Asia/Taipei
+
+# Google Search Console 驗證碼（「HTML 標記」驗證方式中 content="..." 的值）
+# 例：google_site_verification: "abc123..."，留空則不輸出
+google_site_verification: ""
+
+maintainer:
+  name: Sheng-Shan Chen
+  url: https://stwater20.github.io/
+
+lab:
+  founded: 2001            # 首屆研究生畢業年，首頁「年研究耕耘」由此自動計算
+  email: twp@ntut.edu.tw
+  phone_office: "(02) 2771-2171 #4222"
+  phone_lab: "(02) 2771-2171 #4269"
+  phone_vp: "(02) 2771-2171 #1091"
+  office: 宏裕科技研究大樓 1524 室
+  office_en: Room 1524, Hong-Yue Technology Research Building
+  room: 宏裕科技研究大樓 1621 室
+  room_en: Room 1621, Hong-Yue Technology Research Building
+  address: 10608 臺北市大安區忠孝東路三段 1 號
+  address_en: No. 1, Sec. 3, Zhongxiao E. Rd., Da'an Dist., Taipei 10608, Taiwan
+  scholar: https://scholar.google.com.tw/citations?hl=zh-TW&user=K8bOZYsAAAAJ
+  pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=Pai+TW%5BAuthor%5D
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: zh
+  - scope:
+      path: "en"
+    values:
+      lang: en

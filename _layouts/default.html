@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{%- assign t = site.data.ui[page.lang] -%}
+{%- assign nav_item = site.data.nav | where: "key", page.key | first -%}
+{%- if page.lang == "en" -%}{%- assign alt_lang = "zh" -%}{%- else -%}{%- assign alt_lang = "en" -%}{%- endif -%}
+{%- assign url_key = page.lang | append: "_url" -%}
+{%- assign alt_key = alt_lang | append: "_url" -%}
+{%- if nav_item -%}{%- assign alt_url = nav_item[alt_key] -%}{%- else -%}{%- assign alt_url = nil -%}{%- endif -%}
+<html lang="{% if page.lang == 'en' %}en{% else %}zh-Hant-TW{% endif %}" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- if nav_item %}
+<link rel="alternate" hreflang="zh-Hant" href="{{ nav_item.zh_url | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ nav_item.en_url | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ nav_item.zh_url | absolute_url }}">
+{%- endif %}
+<meta name="theme-color" content="#0b2233">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ t.site_name }}">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/img/og-cover.jpg' | absolute_url }}">
+<meta property="og:locale" content="{{ t.locale }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- if site.google_site_verification != "" %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+<link rel="icon" href="{{ '/favicon-32.png' | relative_url }}" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+{%- if page.jsonld %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "生醫資訊實驗室 Biomedical Informatics Lab",
+  "url": "{{ '/' | absolute_url }}",
+  "logo": "{{ '/assets/img/logo.png' | absolute_url }}",
+  "email": "{{ site.lab.email }}",
+  "parentOrganization": {"@type": "CollegeOrUniversity", "name": "National Taipei University of Technology"},
+  "address": {"@type": "PostalAddress", "streetAddress": "忠孝東路三段1號", "addressLocality": "臺北市大安區", "postalCode": "10608", "addressCountry": "TW"},
+  "founder": {"@type": "Person", "name": "白敦文 Tun-Wen Pai", "jobTitle": "Professor", "sameAs": ["{{ site.lab.scholar }}"]}
+}
+</script>
+{%- endif %}
+</head>
+<body>
+<a class="skip-link" href="#main">{{ t.skip }}</a>
+{% include header.html %}
+<main id="main">
+{{ content }}
+</main>
+{% include footer.html %}
+<script src="{{ '/main.js' | relative_url }}" defer></script>
+</body>
+</html>

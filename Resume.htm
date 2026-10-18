@@ -1,78 +1,26 @@
-<!DOCTYPE html>
-<html lang="zh-Hant-TW" class="no-js">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>白敦文教授 個人履歷｜NTUT 生醫資訊實驗室</title>
-<meta name="description" content="白敦文教授個人履歷：國立臺北科技大學副校長、資訊工程系教授，美國杜克大學電機及計算機工程博士。">
-<link rel="canonical" href="https://ntut-biolab.github.io/Resume.htm">
-<meta name="theme-color" content="#0b2233">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="NTUT 生醫資訊實驗室">
-<meta property="og:title" content="白敦文教授 個人履歷｜NTUT 生醫資訊實驗室">
-<meta property="og:description" content="白敦文教授個人履歷：國立臺北科技大學副校長、資訊工程系教授，美國杜克大學電機及計算機工程博士。">
-<meta property="og:url" content="https://ntut-biolab.github.io/Resume.htm">
-<meta property="og:image" content="https://ntut-biolab.github.io/assets/img/og-cover.jpg">
-<meta property="og:locale" content="zh_TW">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;800&display=swap">
-<link rel="stylesheet" href="style.css">
-<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-</head>
-<body>
-<a class="skip-link" href="#main">跳至主要內容</a>
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html" aria-label="生醫資訊實驗室 首頁">
-      <img class="brand-mark" src="assets/img/logo-128.png" alt="" width="44" height="44">
-      <span class="brand-text"><strong>生醫資訊實驗室</strong><span>NTUT BIOMEDICAL INFORMATICS LAB</span></span>
-    </a>
-    <nav class="site-nav" id="site-nav" aria-label="主要導覽">
-      <a href="index.html">首頁</a>
-      <a href="PRoject.htm">研究與計畫</a>
-      <a href="labmembers.htm">實驗室成員</a>
-      <a href="Resume.htm" aria-current="page">主持人</a>
-      <a href="ChineseCourse.htm">課程</a>
-      <a href="Links.htm">資源連結</a>
-      <a href="photo.htm">相片集</a>
-    </nav>
-    <div class="header-actions">
-      <button class="icon-btn theme-toggle" type="button" aria-label="切換深色／淺色模式"><span class="icon-moon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></span><span class="icon-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span></button>
-      <button class="icon-btn menu-toggle" type="button" aria-label="開啟選單" aria-controls="site-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    </div>
-  </div>
-</header>
-<main id="main">
-<section class="page-hero">
-  <div class="container">
-    <div class="breadcrumb"><a href="index.html">首頁</a> / 主持人</div>
-    <span class="eyebrow">Principal Investigator</span>
-    <h1>白敦文 教授 <span style="font-weight:500;opacity:.7;font-size:.6em">Tun-Wen Pai, Ph.D.</span></h1>
-    <p>國立臺北科技大學副校長、資訊工程系教授。研究專長為生物資訊、醫學資訊、幼兒發展遲緩診斷與癌症生物標記發現。</p>
-  </div>
-</section>
-
+---
+key: pi
+title: 白敦文教授 個人履歷｜NTUT 生醫資訊實驗室
+description: 白敦文教授個人履歷：國立臺北科技大學副校長、資訊工程系教授，美國杜克大學電機及計算機工程博士。
+---
+{% include page-hero.html crumb="主持人" eyebrow="Principal Investigator" title='白敦文 教授 <span style="font-weight:500;opacity:.7;font-size:.6em">Tun-Wen Pai, Ph.D.</span>' lead="國立臺北科技大學副校長、資訊工程系教授。研究專長為生物資訊、醫學資訊、幼兒發展遲緩診斷與癌症生物標記發現。" %}
 <div class="page-body">
   <div class="container cv-grid">
     <aside class="card cv-aside">
-      <img src="photo/Tun-Wen-Pai-270x270_c.jpg" alt="白敦文教授" width="140" height="140">
+      <img src="{{ '/photo/Tun-Wen-Pai-270x270_c.jpg' | relative_url }}" alt="白敦文教授" width="140" height="140">
       <h2>白敦文</h2>
       <div class="en">Tun-Wen Pai</div>
       <p class="about-role">副校長 · 教授</p>
       <dl>
-        <div><dt>E-MAIL</dt><dd><a href="mailto:twp@ntut.edu.tw">twp@ntut.edu.tw</a></dd></div>
-        <div><dt>電話（副校長室）</dt><dd>(02) 2771-2171 #1091</dd></div>
-        <div><dt>電話（辦公室）</dt><dd>(02) 2771-2171 #4222</dd></div>
-        <div><dt>辦公室</dt><dd>宏裕科技研究大樓 1524 室</dd></div>
+        <div><dt>E-MAIL</dt><dd><a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a></dd></div>
+        <div><dt>電話（副校長室）</dt><dd>{{ site.lab.phone_vp }}</dd></div>
+        <div><dt>電話（辦公室）</dt><dd>{{ site.lab.phone_office }}</dd></div>
+        <div><dt>辦公室</dt><dd>{{ site.lab.office }}</dd></div>
         <div><dt>NTOU 實驗室</dt><dd>海洋大學電機二館 INS210A<br>(02) 2462-2192 #6632</dd></div>
       </dl>
       <div class="profile-links">
-        <a class="btn btn-ghost btn-sm" href="https://scholar.google.com.tw/citations?hl=zh-TW&user=K8bOZYsAAAAJ" target="_blank" rel="noopener">Scholar ↗</a>
-        <a class="btn btn-ghost btn-sm" href="https://pubmed.ncbi.nlm.nih.gov/?term=Pai+TW%5BAuthor%5D" target="_blank" rel="noopener">PubMed ↗</a>
+        <a class="btn btn-ghost btn-sm" href="{{ site.lab.scholar }}" target="_blank" rel="noopener">Scholar ↗</a>
+        <a class="btn btn-ghost btn-sm" href="{{ site.lab.pubmed }}" target="_blank" rel="noopener">PubMed ↗</a>
       </div>
     </aside>
     <div>
@@ -85,82 +33,23 @@
       </section>
       <section class="block">
         <h2 class="block-title">現職 <span class="en">Current Positions</span></h2>
-        <ul class="timeline">
-          <li class="current"><div class="when">2026.02 — 迄今</div><h4>副校長</h4><div class="org">國立臺北科技大學</div><div class="en-line">Vice President, National Taipei University of Technology</div></li>
-          <li class="current"><h4>教授</h4><div class="org">國立臺北科技大學 資訊工程系</div><div class="en-line">Professor, Dept. of Computer Science and Information Engineering, NTUT</div></li>
-          <li class="current"><h4>合聘教授</h4><div class="org">國立臺灣海洋大學 資訊工程學系</div><div class="en-line">Adjunct Professor, National Taiwan Ocean University</div></li>
-        </ul>
+{% include timeline.html items=site.data.cv.current current=true %}
       </section>
       <section class="block">
         <h2 class="block-title">經歷 <span class="en">Positions Held</span></h2>
-        <ul class="timeline">
-          <li><div class="when">2022.09 — 2023.08</div><h4>國際事務長</h4><div class="org">國立臺北科技大學</div><div class="en-line">Director of International Affairs, NTUT</div></li>
-          <li><div class="when">2019.08 — 2022.11</div><h4>系主任</h4><div class="org">國立臺北科技大學 資訊工程系</div><div class="en-line">Department Chair, CSIE, NTUT</div></li>
-          <li><div class="when">2006.06 — 2018.07</div><h4>中心主任</h4><div class="org">國立臺灣海洋大學 基因體與生物資訊研究中心</div><div class="en-line">Director, Center for Genomics and Bioinformatics, NTOU</div></li>
-          <li><div class="when">2002.08 — 2004.07</div><h4>系主任</h4><div class="org">國立臺灣海洋大學 資訊工程學系</div><div class="en-line">Department Chair, CSIE, NTOU</div></li>
-          <li><h4>教授</h4><div class="org">國立臺灣海洋大學 資訊工程學系</div><div class="en-line">Professor, National Taiwan Ocean University</div></li>
-          <li><h4>副教授</h4><div class="org">國立臺灣海洋大學 資訊工程學系</div><div class="en-line">Associate Professor, National Taiwan Ocean University</div></li>
-          <li><h4>副教授</h4><div class="org">萬能科技大學 電子工程系</div><div class="en-line">Associate Professor, Vanung University</div></li>
-          <li><h4>副研究員</h4><div class="org">交通部中華電信研究所 應用科技研究室</div><div class="en-line">Associate Researcher, Chunghwa Telecom Laboratories</div></li>
-        </ul>
+{% include timeline.html items=site.data.cv.past %}
       </section>
       <section class="block">
         <h2 class="block-title">學歷 <span class="en">Education</span></h2>
-        <ul class="timeline">
-          <li><div class="when">Ph.D.</div><h4>電機與電腦工程 博士</h4><div class="org">美國杜克大學</div><div class="en-line">Duke University, Dept. of Electrical and Computer Engineering</div></li>
-          <li><div class="when">MSE</div><h4>電機與電腦工程 碩士</h4><div class="org">美國約翰霍普金斯大學</div><div class="en-line">The Johns Hopkins University, Dept. of Electrical and Computer Engineering</div></li>
-          <li><div class="when">B.S.</div><h4>電機系</h4><div class="org">國立臺北科技大學（國立臺北工專）</div><div class="en-line">National Taipei University of Technology, Dept. of Electrical Engineering</div></li>
-        </ul>
+{% include timeline.html items=site.data.cv.education %}
       </section>
       <section class="block">
         <h2 class="block-title">著作 <span class="en">Publications</span></h2>
         <div class="profile-links">
-          <a class="btn btn-primary" href="C302.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg> 論文及著述目錄 (PDF)</a>
-          <a class="btn btn-ghost" href="https://scholar.google.com.tw/citations?hl=zh-TW&user=K8bOZYsAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a class="btn btn-primary" href="{{ site.lab.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a class="btn btn-ghost" href="{{ '/C302.pdf' | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="file" %} 論文及著述目錄 (PDF)</a>
         </div>
       </section>
     </div>
   </div>
 </div>
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/img/logo-128.png" alt="" width="44" height="44">
-          <span class="brand-text"><strong>生醫資訊實驗室</strong><span>Biomedical Informatics Lab</span></span>
-        </a>
-        <p>國立臺北科技大學 資訊工程系<br>白敦文教授研究團隊 — 以資料科學與人工智慧推動精準醫療。</p>
-      </div>
-      <div>
-        <h4>網站導覽</h4>
-        <ul>
-          <li><a href="PRoject.htm">研究與計畫</a></li>
-          <li><a href="labmembers.htm">實驗室成員</a></li>
-          <li><a href="Resume.htm">主持人</a></li>
-          <li><a href="ChineseCourse.htm">課程</a></li>
-          <li><a href="Links.htm">資源連結</a></li>
-          <li><a href="photo.htm">相片集</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>聯絡資訊</h4>
-        <ul>
-          <li><a href="mailto:twp@ntut.edu.tw">twp@ntut.edu.tw</a></li>
-          <li>(02) 2771-2171 #4222</li>
-          <li>宏裕科技研究大樓 1621 室</li>
-          <li><a href="https://csie.ntut.edu.tw" target="_blank" rel="noopener">北科大資訊工程系 ↗</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year">2026</span> NTUT Biomedical Informatics Lab. All rights reserved.</span>
-      <span><a href="disclaimer.html">免責聲明</a> · 網站維護：<a href="https://stwater20.github.io/" target="_blank" rel="noopener">Sheng-Shan Chen</a></span>
-    </div>
-    <p class="footer-disclaimer">本網站為實驗室之研究與教學資訊網站，非國立臺北科技大學官方網站；內容僅供參考，研究成果不構成任何醫療建議。詳見<a href="disclaimer.html">免責聲明</a>。</p>
-  </div>
-</footer>
-<script src="main.js" defer></script>
-</body>
-</html>

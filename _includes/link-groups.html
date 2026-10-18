@@ -1,0 +1,12 @@
+    <div class="link-groups">
+{%- for g in site.data.links %}
+      <section class="card link-group reveal">
+        <h3><span class="gi">{% include icon.html name=g.icon %}</span>{% if page.lang == "en" %}{{ g.title_en | escape }}{% else %}{{ g.title }} <span class="en" style="font-size:14px">{{ g.title_en | escape }}</span>{% endif %}</h3>
+        <ul>
+          {%- for l in g.links %}
+          <li><a href="{{ l.url }}" target="_blank" rel="noopener"><span>{{ l.name | escape }}<small>{{ l.note | escape }}</small></span></a></li>
+          {%- endfor %}
+        </ul>
+      </section>
+{%- endfor %}
+    </div>

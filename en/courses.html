@@ -1,0 +1,22 @@
+---
+key: courses
+title: Teaching | NTUT Biomedical Informatics Lab
+description: Courses taught by Prof. Tun-Wen Pai, including digital image processing, computational biology and medical informatics, pattern recognition, and image analysis and computer vision.
+---
+{% include page-hero.html title="Teaching" eyebrow="Courses" lead="From signal processing and image analysis to pattern recognition and computational biology — a solid foundation for interdisciplinary biomedical AI research." %}
+<div class="page-body">
+  <div class="container">
+    <section class="block">
+      <h2 class="block-title">{{ site.data.courses.recent.label_en }}</h2>
+      <div class="course-grid">
+{%- for c in site.data.courses.recent.items %}{% include course-card.html course=c %}{% endfor %}
+      </div>
+    </section>
+    <section class="block">
+      <h2 class="block-title">Other Courses</h2>
+      <div class="course-grid">
+{%- for c in site.data.courses.other %}{% include course-card.html course=c %}{% endfor %}
+      </div>
+    </section>
+  </div>
+</div>

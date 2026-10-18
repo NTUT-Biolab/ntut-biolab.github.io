@@ -1,0 +1,37 @@
+# 免責聲明條文。[maintainer] 與 [email] 會自動替換為 _config.yml 中的維護者連結與聯絡信箱。
+
+updated: 2026 年 10 月
+updated_en: October 2026
+terms:
+  - title: 網站性質
+    title_en: Nature of this site
+    body: 本網站為國立臺北科技大學資訊工程系生醫資訊實驗室（白敦文教授研究團隊）之研究與教學資訊網站，並非國立臺北科技大學官方網站。有關學校行政、招生、課程等正式資訊，請以國立臺北科技大學及資訊工程系官方公告為準。
+    body_en: This website presents the research and teaching activities of the Biomedical Informatics Lab (Prof. Tun-Wen Pai's research group), Department of Computer Science and Information Engineering, National Taipei University of Technology (NTUT). It is not an official NTUT website. For official information on administration, admissions and courses, please refer to announcements by NTUT and its Department of Computer Science and Information Engineering.
+  - title: 內容正確性
+    title_en: Accuracy of information
+    body: 本網站資料（包含人員職稱、研究計畫、課程、聯絡方式與成果等）皆盡力保持正確與即時，但仍可能未即時反映最新狀況或有疏漏之處，僅供參考，不構成任何形式之保證或承諾。
+    body_en: We strive to keep the information on this website (including titles, research projects, courses, contact details and outputs) accurate and up to date, but it may not reflect the latest status and may contain omissions. It is provided for reference only and does not constitute a warranty or commitment of any kind.
+  - title: 非醫療建議
+    title_en: Not medical advice
+    body: 本網站所介紹之研究成果、系統、模型與工具均屬學術研究性質，不構成醫療診斷、治療或任何醫療建議，亦不應作為臨床決策之唯一依據。如有健康相關問題，請諮詢合格之醫療專業人員。
+    body_en: The research outputs, systems, models and tools described on this website are academic research. They do not constitute medical diagnosis, treatment or any other medical advice, and should not be used as the sole basis for clinical decisions. For health concerns, please consult a qualified healthcare professional.
+  - title: 外部連結
+    title_en: External links
+    body: 本網站提供之第三方網站連結（包含資料庫、期刊、研討會、學術檢索服務等）僅為便利使用者參考，其內容、可用性與隱私政策由各該網站負責，本實驗室不對其承擔任何責任。
+    body_en: Links to third-party websites (including databases, journals, conferences and scholarly search services) are provided for convenience only. Their content, availability and privacy practices are the responsibility of the respective websites, and the lab accepts no liability for them.
+  - title: 智慧財產權
+    title_en: Intellectual property
+    body: 本網站所載之論文、研究圖表、相片及其他著作，其著作權屬原作者或相關權利人所有。學位論文題目資料參考自國家圖書館「臺灣博碩士論文知識加值系統」。未經授權，請勿重製、改作或作商業用途使用。
+    body_en: Copyright in the papers, research figures, photos and other works on this website belongs to their original authors or rights holders. Thesis titles are based on the National Central Library's Taiwan Theses and Dissertations database (NDLTD). Please do not reproduce, adapt or use them commercially without permission.
+  - title: 個人資料
+    title_en: Personal data
+    body: 網站所列之畢業生姓名與學位論文題目，係作為實驗室學術成果之紀錄。若當事人希望更正或移除相關資訊，請來信聯繫，我們將儘速處理。
+    body_en: The names and thesis titles of graduates are listed as a record of the lab's academic work. If you would like your information corrected or removed, please contact us by email and we will handle it promptly.
+  - title: 網站維護
+    title_en: Site maintenance
+    body: 本網站由 [maintainer] 協助設計與維護。如發現資料錯誤、連結失效或有任何建議，歡迎來信 [email]。
+    body_en: This website is designed and maintained by [maintainer]. If you find errors or broken links, or have suggestions, please contact [email].
+  - title: 聲明修訂
+    title_en: Changes
+    body: 本實驗室得隨時修訂本聲明內容，修訂後即公布於本頁，不另行通知。
+    body_en: The lab may revise this disclaimer at any time. Revisions take effect when published on this page, without separate notice.

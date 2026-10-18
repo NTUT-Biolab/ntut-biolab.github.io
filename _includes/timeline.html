@@ -1,0 +1,5 @@
+        <ul class="timeline">
+          {%- for i in include.items %}
+          <li{% if include.current %} class="current"{% endif %}>{% if i.when %}<div class="when">{% if page.lang == "en" %}{{ i.when | replace: "迄今", "Present" }}{% else %}{{ i.when }}{% endif %}</div>{% endif %}{% if page.lang == "en" %}<h4>{{ i.en | escape }}</h4>{% else %}<h4>{{ i.title }}</h4><div class="org">{{ i.org }}</div><div class="en-line">{{ i.en | escape }}</div>{% endif %}</li>
+          {%- endfor %}
+        </ul>

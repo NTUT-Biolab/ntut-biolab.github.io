@@ -1,0 +1,55 @@
+# 主持人履歷。when 可省略。
+
+current:
+- when: 2026.02 — 迄今
+  title: 副校長
+  org: 國立臺北科技大學
+  en: Vice President, National Taipei University of Technology
+- title: 教授
+  org: 國立臺北科技大學 資訊工程系
+  en: Professor, Dept. of Computer Science and Information Engineering, NTUT
+- title: 合聘教授
+  org: 國立臺灣海洋大學 資訊工程學系
+  en: Adjunct Professor, National Taiwan Ocean University
+past:
+- when: 2022.09 — 2023.08
+  title: 國際事務長
+  org: 國立臺北科技大學
+  en: Director of International Affairs, NTUT
+- when: 2019.08 — 2022.11
+  title: 系主任
+  org: 國立臺北科技大學 資訊工程系
+  en: Department Chair, CSIE, NTUT
+- when: 2006.06 — 2018.07
+  title: 中心主任
+  org: 國立臺灣海洋大學 基因體與生物資訊研究中心
+  en: Director, Center for Genomics and Bioinformatics, NTOU
+- when: 2002.08 — 2004.07
+  title: 系主任
+  org: 國立臺灣海洋大學 資訊工程學系
+  en: Department Chair, CSIE, NTOU
+- title: 教授
+  org: 國立臺灣海洋大學 資訊工程學系
+  en: Professor, National Taiwan Ocean University
+- title: 副教授
+  org: 國立臺灣海洋大學 資訊工程學系
+  en: Associate Professor, National Taiwan Ocean University
+- title: 副教授
+  org: 萬能科技大學 電子工程系
+  en: Associate Professor, Vanung University
+- title: 副研究員
+  org: 交通部中華電信研究所 應用科技研究室
+  en: Associate Researcher, Chunghwa Telecom Laboratories
+education:
+- when: Ph.D.
+  title: 電機與電腦工程 博士
+  org: 美國杜克大學
+  en: Duke University, Dept. of Electrical and Computer Engineering
+- when: MSE
+  title: 電機與電腦工程 碩士
+  org: 美國約翰霍普金斯大學
+  en: The Johns Hopkins University, Dept. of Electrical and Computer Engineering
+- when: B.S.
+  title: 電機系
+  org: 國立臺北科技大學（國立臺北工專）
+  en: National Taipei University of Technology, Dept. of Electrical Engineering
