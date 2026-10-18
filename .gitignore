@@ -44,3 +44,10 @@ images/52415.bmp
 Thumbs.db
 images/Thumbs.db
 photo/Thumbs.db
+
+# ── Jekyll ──
+_site/
+.jekyll-cache/
+.sass-cache/
+Gemfile.lock
+vendor/

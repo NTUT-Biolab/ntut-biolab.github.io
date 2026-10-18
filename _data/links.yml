@@ -1,0 +1,102 @@
+# 資源連結頁。icon 可用：database、book、calendar。
+
+- title: 資料庫與分析工具
+  title_en: Databases & Tools
+  icon: database
+  links:
+  - name: NCBI
+    note: National Center for Biotechnology Information
+    url: https://www.ncbi.nlm.nih.gov/
+  - name: EMBL-EBI Services
+    note: European Bioinformatics Institute
+    url: https://www.ebi.ac.uk/services
+  - name: UniProt
+    note: Protein sequence & function
+    url: https://www.uniprot.org/
+  - name: RCSB PDB
+    note: Protein Data Bank
+    url: https://www.rcsb.org/
+  - name: KEGG
+    note: Pathways & genomes
+    url: https://www.genome.jp/kegg/
+  - name: Gene Ontology
+    note: Functional annotation
+    url: https://geneontology.org/
+  - name: Bioinformatics Links Directory
+    note: Curated tool directory
+    url: https://bioinformatics.ca/links_directory/
+- title: 期刊
+  title_en: Journals
+  icon: book
+  links:
+  - name: Bioinformatics
+    note: Oxford Academic
+    url: https://academic.oup.com/bioinformatics
+  - name: BMC Bioinformatics
+    note: BioMed Central
+    url: https://bmcbioinformatics.biomedcentral.com/
+  - name: PLOS Computational Biology
+    note: PLOS
+    url: https://journals.plos.org/ploscompbiol/
+  - name: PLOS ONE
+    note: PLOS
+    url: https://journals.plos.org/plosone/
+  - name: IEEE Journal of Biomedical and Health Informatics
+    note: IEEE EMBS
+    url: https://www.embs.org/jbhi/
+  - name: Computers in Biology and Medicine
+    note: Elsevier
+    url: https://www.sciencedirect.com/journal/computers-in-biology-and-medicine
+  - name: Journal of Computational Biology
+    note: Mary Ann Liebert
+    url: https://www.liebertpub.com/journal/cmb
+  - name: Algorithms for Molecular Biology
+    note: BioMed Central
+    url: https://almob.biomedcentral.com/
+  - name: Int. J. of Data Mining and Bioinformatics
+    note: Inderscience
+    url: https://www.inderscience.com/jhome.php?jcode=ijdmb
+- title: 更多相關期刊
+  title_en: More Journals
+  icon: book
+  links:
+  - name: Biostatistics
+    note: Oxford Academic
+    url: https://academic.oup.com/biostatistics
+  - name: Journal of Theoretical Biology
+    note: Elsevier
+    url: https://www.sciencedirect.com/journal/journal-of-theoretical-biology
+  - name: Statistical Methods in Medical Research
+    note: SAGE
+    url: https://journals.sagepub.com/home/smm
+  - name: Journal of Computational Neuroscience
+    note: Springer
+    url: https://link.springer.com/journal/10827
+  - name: J. of Molecular Graphics and Modelling
+    note: Elsevier
+    url: https://www.sciencedirect.com/journal/journal-of-molecular-graphics-and-modelling
+  - name: Mathematical Biosciences
+    note: Elsevier
+    url: https://www.sciencedirect.com/journal/mathematical-biosciences
+  - name: Evolutionary Bioinformatics
+    note: SAGE
+    url: https://journals.sagepub.com/home/evb
+- title: 研討會
+  title_en: Conferences
+  icon: calendar
+  links:
+  - name: ISMB
+    note: Intelligent Systems for Molecular Biology (ISCB)
+    url: https://www.iscb.org/
+  - name: RECOMB
+    note: Research in Computational Molecular Biology
+    url: https://www.recomb.org/
+  - name: IEEE BIBM
+    note: Bioinformatics and Biomedicine
+    url: https://ieeebibm.org/
+  - name: ACM BCB
+    note: Bioinformatics, Computational Biology & Health Informatics
+    url: https://acm-bcb.org/
+  - name: Cell Symposia
+    note: Systems & Computational Biology
+    url: https://www.cell.com/symposia

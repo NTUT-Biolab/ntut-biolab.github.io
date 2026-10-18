@@ -1,0 +1,23 @@
+{%- assign en = false -%}{%- if page.lang == "en" -%}{%- assign en = true -%}{%- endif -%}
+<div class="page-body">
+  <div class="container">
+    <div class="gallery">
+      <figure class="card reveal">
+        <button type="button" data-lightbox="{{ '/assets/img/lab-2019.jpg' | relative_url }}" data-caption="{% if en %}Lab group photo, AY 2018–19 (January 2019){% else %}107 學年度 實驗室活動合影（2019 年 1 月）{% endif %}"><img src="{{ '/assets/img/lab-2019-sm.jpg' | relative_url }}" alt="{% if en %}Lab members group photo, 2019{% else %}107 學年度實驗室成員合影{% endif %}" loading="lazy" width="800" height="600"></button>
+        <figcaption>{% if en %}<strong>Lab group photo</strong>January 2019{% else %}<strong>107 學年度 實驗室合影</strong>2019 年 1 月{% endif %}</figcaption>
+      </figure>
+      <figure class="card reveal">
+        <div class="placeholder"><div>{% include icon.html name="users" style="width:40px;height:40px;margin:0 auto 10px" %}{% if en %}More photos coming soon{% else %}更多活動相片陸續整理中{% endif %}</div></div>
+        <figcaption>{% if en %}<strong>Conferences &amp; defenses</strong>Coming soon{% else %}<strong>學術研討會與口試</strong>Coming soon{% endif %}</figcaption>
+      </figure>
+      <figure class="card reveal">
+        <div class="placeholder"><div>{% include icon.html name="cap" style="width:40px;height:40px;margin:0 auto 10px" %}{% if en %}Graduations &amp; gatherings{% else %}畢業典禮與實驗室聚會{% endif %}</div></div>
+        <figcaption>{% if en %}<strong>Graduations &amp; gatherings</strong>Coming soon{% else %}<strong>畢業與聚會</strong>Coming soon{% endif %}</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="{% if en %}Enlarged photo{% else %}放大檢視相片{% endif %}">
+  <button class="icon-btn" type="button" aria-label="{% if en %}Close{% else %}關閉{% endif %}">{% include icon.html name="x" %}</button>
+  <div><img alt=""><p></p></div>
+</div>

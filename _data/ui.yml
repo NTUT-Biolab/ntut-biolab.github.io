@@ -1,0 +1,46 @@
+# 介面文字（頁首、頁尾等共用區塊）
+
+zh:
+  brand: 生醫資訊實驗室
+  brand_sub: NTUT BIOMEDICAL INFORMATICS LAB
+  site_name: NTUT 生醫資訊實驗室
+  skip: 跳至主要內容
+  home_label: 生醫資訊實驗室 首頁
+  nav_label: 主要導覽
+  theme: 切換深色／淺色模式
+  menu: 開啟選單
+  switch_label: English
+  switch_text: EN
+  home: 首頁
+  footer_sub: Biomedical Informatics Lab
+  footer_about: 國立臺北科技大學 資訊工程系<br>白敦文教授研究團隊 — 以資料科學與人工智慧推動精準醫療。
+  footer_nav: 網站導覽
+  footer_contact: 聯絡資訊
+  csie: 北科大資訊工程系 ↗
+  disclaimer: 免責聲明
+  maintained_by: 網站維護
+  rights: All rights reserved.
+  notice: 本網站為實驗室之研究與教學資訊網站，非國立臺北科技大學官方網站；內容僅供參考，研究成果不構成任何醫療建議。詳見
+  locale: zh_TW
+en:
+  brand: Biomedical Informatics Lab
+  brand_sub: NTUT CSIE
+  site_name: NTUT Biomedical Informatics Lab
+  skip: Skip to main content
+  home_label: Biomedical Informatics Lab home
+  nav_label: Main navigation
+  theme: Toggle dark / light mode
+  menu: Open menu
+  switch_label: 中文
+  switch_text: 中
+  home: Home
+  footer_sub: National Taipei University of Technology
+  footer_about: Department of Computer Science and Information Engineering, National Taipei University of Technology.<br>Prof. Tun-Wen Pai's research group — advancing precision medicine with data science and AI.
+  footer_nav: Explore
+  footer_contact: Contact
+  csie: NTUT CSIE ↗
+  disclaimer: Disclaimer
+  maintained_by: Maintained by
+  rights: All rights reserved.
+  notice: This is a research and teaching website of the lab, not an official website of National Taipei University of Technology. Content is for reference only and does not constitute medical advice. See the
+  locale: en_US

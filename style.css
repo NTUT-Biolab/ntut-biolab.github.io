@@ -620,3 +620,16 @@ html.no-js .reveal { opacity: 1; transform: none; }
 img.brand-mark { width: 44px; height: 44px; border-radius: 50%; object-fit: contain; }
 :root[data-theme="dark"] img.brand-mark, .site-footer img.brand-mark { background: #fff; padding: 2px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) img.brand-mark { background: #fff; padding: 2px; } }
+
+/* ── Language switch ── */
+.lang-switch { font-size: 13px; font-weight: 700; letter-spacing: .02em; }
+.lang-switch:hover { text-decoration: none; }
+.brand { min-width: 0; flex-shrink: 1; }
+.brand-text { min-width: 0; }
+.brand-text strong, .brand-text span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 480px) {
+  .site-header .container { gap: 10px; }
+  .header-actions { gap: 4px; }
+  .brand-mark { width: 38px !important; height: 38px !important; }
+  .brand-text strong { font-size: 14.5px; }
+}

@@ -1,0 +1,36 @@
+{%- assign disclaimer = site.data.nav | where: "key", "disclaimer" | first -%}
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="{{ home[url_key] | relative_url }}">
+          <img class="brand-mark" src="{{ '/assets/img/logo-128.png' | relative_url }}" alt="" width="44" height="44">
+          <span class="brand-text"><strong>{{ t.brand }}</strong><span>{{ t.footer_sub }}</span></span>
+        </a>
+        <p>{{ t.footer_about }}</p>
+      </div>
+      <div>
+        <h4>{{ t.footer_nav }}</h4>
+        <ul>
+          {%- for item in site.data.nav offset: 1 %}{% unless item.hidden %}
+          <li><a href="{{ item[url_key] | relative_url }}">{{ item[page.lang] }}</a></li>
+          {%- endunless %}{% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h4>{{ t.footer_contact }}</h4>
+        <ul>
+          <li><a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a></li>
+          <li>{{ site.lab.phone_office }}</li>
+          <li>{% if page.lang == "en" %}{{ site.lab.room_en }}{% else %}{{ site.lab.room }}{% endif %}</li>
+          <li><a href="https://csie.ntut.edu.tw" target="_blank" rel="noopener">{{ t.csie }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">{{ site.time | date: "%Y" }}</span> NTUT Biomedical Informatics Lab. {{ t.rights }}</span>
+      <span><a href="{{ disclaimer[url_key] | relative_url }}">{{ t.disclaimer }}</a> · {{ t.maintained_by }}{% if page.lang != "en" %}：{% else %} {% endif %}<a href="{{ site.maintainer.url }}" target="_blank" rel="noopener">{{ site.maintainer.name }}</a></span>
+    </div>
+    <p class="footer-disclaimer">{{ t.notice }}<a href="{{ disclaimer[url_key] | relative_url }}">{{ t.disclaimer }}</a>{% if page.lang == "en" %}.{% else %}。{% endif %}</p>
+  </div>
+</footer>

@@ -1,0 +1,55 @@
+---
+key: pi
+title: Prof. Tun-Wen Pai — Curriculum Vitae | NTUT Biomedical Informatics Lab
+description: CV of Prof. Tun-Wen Pai, Vice President of National Taipei University of Technology and Professor of Computer Science and Information Engineering; Ph.D., Duke University.
+---
+{% include page-hero.html crumb="PI" eyebrow="Principal Investigator" title='Prof. Tun-Wen Pai <span style="font-weight:500;opacity:.7;font-size:.6em">白敦文, Ph.D.</span>' lead="Vice President of National Taipei University of Technology and Professor of Computer Science and Information Engineering. Research interests: bioinformatics, medical informatics, early childhood developmental delay diagnosis and cancer biomarker discovery." %}
+<div class="page-body">
+  <div class="container cv-grid">
+    <aside class="card cv-aside">
+      <img src="{{ '/photo/Tun-Wen-Pai-270x270_c.jpg' | relative_url }}" alt="Prof. Tun-Wen Pai" width="140" height="140">
+      <h2>Tun-Wen Pai</h2>
+      <div class="en">白敦文</div>
+      <p class="about-role">Vice President · Professor</p>
+      <dl>
+        <div><dt>E-MAIL</dt><dd><a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a></dd></div>
+        <div><dt>PHONE (VICE PRESIDENT'S OFFICE)</dt><dd>+886-2-2771-2171 #1091</dd></div>
+        <div><dt>PHONE (OFFICE)</dt><dd>+886-2-2771-2171 #4222</dd></div>
+        <div><dt>OFFICE</dt><dd>{{ site.lab.office_en }}</dd></div>
+        <div><dt>NTOU LAB</dt><dd>Room INS210A, Electrical Engineering Building II, NTOU<br>+886-2-2462-2192 #6632</dd></div>
+      </dl>
+      <div class="profile-links">
+        <a class="btn btn-ghost btn-sm" href="{{ site.lab.scholar }}" target="_blank" rel="noopener">Scholar ↗</a>
+        <a class="btn btn-ghost btn-sm" href="{{ site.lab.pubmed }}" target="_blank" rel="noopener">PubMed ↗</a>
+      </div>
+    </aside>
+    <div>
+      <section class="block">
+        <h2 class="block-title">Research Interests</h2>
+        <div class="chips">
+          <span class="chip">Bioinformatics</span><span class="chip">Medical Informatics</span>
+          <span class="chip">Early Childhood Developmental Delay Diagnosis</span><span class="chip">Cancer Biomarker Discovery</span>
+        </div>
+      </section>
+      <section class="block">
+        <h2 class="block-title">Current Positions</h2>
+{% include timeline.html items=site.data.cv.current current=true %}
+      </section>
+      <section class="block">
+        <h2 class="block-title">Positions Held</h2>
+{% include timeline.html items=site.data.cv.past %}
+      </section>
+      <section class="block">
+        <h2 class="block-title">Education</h2>
+{% include timeline.html items=site.data.cv.education %}
+      </section>
+      <section class="block">
+        <h2 class="block-title">Publications</h2>
+        <div class="profile-links">
+          <a class="btn btn-primary" href="{{ site.lab.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a class="btn btn-ghost" href="{{ '/C302.pdf' | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="file" %} Publication list (PDF, Chinese)</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

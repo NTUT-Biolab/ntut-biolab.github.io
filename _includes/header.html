@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="container">
+    {%- assign home = site.data.nav | first %}
+    <a class="brand" href="{{ home[url_key] | relative_url }}" aria-label="{{ t.home_label }}">
+      <img class="brand-mark" src="{{ '/assets/img/logo-128.png' | relative_url }}" alt="" width="44" height="44">
+      <span class="brand-text"><strong>{{ t.brand }}</strong><span>{{ t.brand_sub }}</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="{{ t.nav_label }}">
+      {%- for item in site.data.nav %}{% unless item.hidden %}
+      <a href="{{ item[url_key] | relative_url }}"{% if item.key == page.key %} aria-current="page"{% endif %}>{{ item[page.lang] }}</a>
+      {%- endunless %}{% endfor %}
+    </nav>
+    <div class="header-actions">
+      {%- if alt_url %}
+      <a class="icon-btn lang-switch" href="{{ alt_url | relative_url }}" hreflang="{% if alt_lang == 'en' %}en{% else %}zh-Hant{% endif %}" aria-label="{{ t.switch_label }}" title="{{ t.switch_label }}">{{ t.switch_text }}</a>
+      {%- endif %}
+      <button class="icon-btn theme-toggle" type="button" aria-label="{{ t.theme }}"><span class="icon-moon">{% include icon.html name="moon" %}</span><span class="icon-sun">{% include icon.html name="sun" %}</span></button>
+      <button class="icon-btn menu-toggle" type="button" aria-label="{{ t.menu }}" aria-controls="site-nav" aria-expanded="false">{% include icon.html name="menu" %}</button>
+    </div>
+  </div>
+</header>

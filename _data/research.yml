@@ -1,0 +1,70 @@
+# 四大研究領域（首頁與研究頁共用）。圖片放在 assets/img/research-<slug>.jpg
+
+- slug: genomics
+  title: 基因體暨生物資訊分析
+  title_en: Genomics & Bioinformatics
+  summary: 從序列比對、比較基因體到蛋白質結構分析，開發 DNA 甲基化與 SSR 生物標記探索方法，並結合幾何深度學習與蛋白質語言模型進行抗原表位預測。
+  summary_en: From sequence alignment and comparative genomics to protein structure analysis, we develop methods for discovering DNA methylation and SSR biomarkers, and combine geometric deep learning with protein language models for epitope prediction.
+  tags:
+  - DNA 甲基化生物標記
+  - 抗原表位預測
+  - 比較基因體學
+  - 蛋白質語言模型
+  tags_en:
+  - DNA methylation biomarkers
+  - Epitope prediction
+  - Comparative genomics
+  - Protein language models
+  pdf: bioinformatics.pdf
+  pdf_en: bioinformatics_eng.pdf
+- slug: medical-informatics
+  title: 醫學巨量資訊分析
+  title_en: Big Data in Medical Informatics
+  summary: 以電子病歷與健保資料為基礎，探勘疾病軌跡樣式與共病網路，建立可解釋的風險預測模型，輔助臨床決策與個人化醫療策略。
+  summary_en: Building on electronic medical records and health insurance data, we mine disease trajectory patterns and comorbidity networks to build explainable risk prediction models that support clinical decisions and personalized medicine.
+  tags:
+  - 疾病軌跡探勘
+  - 共病網路
+  - 風險預測
+  - 可解釋 AI
+  tags_en:
+  - Disease trajectory mining
+  - Comorbidity networks
+  - Risk prediction
+  - Explainable AI
+  pdf: medicalinformatics.pdf
+  pdf_en: medicalinformatics_eng.pdf
+- slug: iomt
+  title: 智慧型醫學物聯網應用
+  title_en: Intelligent IoMT Applications
+  summary: 整合穿戴式裝置與生理訊號，打造心臟衰竭患者自我照護系統、六分鐘步行測試與睡眠分期分析，並發展幼兒發展遲緩的自動化評估工具。
+  summary_en: We integrate wearable devices and physiological signals into self-care systems for heart failure patients, six-minute walk test and sleep staging analysis, and develop automated assessment tools for early childhood developmental delay.
+  tags:
+  - 穿戴式裝置
+  - 心衰竭照護
+  - 幼兒發展評估
+  - 生理訊號分析
+  tags_en:
+  - Wearable devices
+  - Heart failure care
+  - Child development assessment
+  - Physiological signals
+  pdf: healthcareiomt.pdf
+  pdf_en: healthcareiomt_eng.pdf
+- slug: imaging
+  title: 智慧型醫學影像分析
+  title_en: Intelligent Medical Imaging Analysis
+  summary: 應用深度學習於數位病理、超音波與臨床影像，涵蓋細胞核偵測、染色正規化、GAN 資料擴增、聯邦式學習與水腫分級等任務。
+  summary_en: We apply deep learning to digital pathology, ultrasound and clinical images, covering nucleus detection, stain normalization, GAN-based data augmentation, federated learning and edema grading.
+  tags:
+  - 數位病理
+  - 影像分割與分類
+  - GAN 資料擴增
+  - 聯邦式學習
+  tags_en:
+  - Digital pathology
+  - Segmentation & classification
+  - GAN data augmentation
+  - Federated learning
+  pdf: medicalimaging.pdf
+  pdf_en: medicalimaging_eng.pdf

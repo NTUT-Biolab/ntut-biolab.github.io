@@ -1,0 +1,23 @@
+{%- assign en = false -%}{%- if page.lang == "en" -%}{%- assign en = true -%}{%- endif -%}
+      <div class="table-wrap">
+      <table class="alumni">
+        <thead><tr><th scope="col">{% if en %}Degree{% else %}學位{% endif %}</th><th scope="col">{% if en %}Name{% else %}姓名{% endif %}</th><th scope="col">{% if en %}Thesis{% else %}論文題目{% endif %}</th></tr></thead>
+        {%- for g in site.data.alumni %}
+        {%- assign ny = g.year | plus: 1912 | modulo: 100 %}
+        <tbody data-year="{{ g.year }} {{ g.year | plus: 1911 }}">
+          <tr class="year-row"><th colspan="3">
+            {%- if en -%}
+            AY {{ g.year | plus: 1911 }}–{% if ny < 10 %}0{% endif %}{{ ny }}{% if g.note_en %} ({{ g.note_en }}){% endif %}<span>{{ g.graduates.size }} graduate{% if g.graduates.size > 1 %}s{% endif %}</span>
+            {%- else -%}
+            {{ g.year }} 學年度{% if g.note %}（{{ g.note }}）{% endif %}<span>AY {{ g.year | plus: 1911 }}–{% if ny < 10 %}0{% endif %}{{ ny }} · {{ g.graduates.size }} 位</span>
+            {%- endif -%}
+          </th></tr>
+          {%- for a in g.graduates %}
+          {%- capture name %}{% if en and a.name_en %}{{ a.name_en | escape }}{% else %}{{ a.name | escape }}{% endif %}{% endcapture %}
+          <tr data-deg="{{ a.degree }}"><td class="deg"><span class="badge badge-{{ a.degree }}">{% if a.degree == "phd" %}{% if en %}Ph.D.{% else %}博士{% endif %}{% else %}{% if en %}M.S.{% else %}碩士{% endif %}{% endif %}</span></td><td class="name"><strong>{% if a.link %}<a href="{{ a.link }}" target="_blank" rel="noopener">{{ name }}</a>{% else %}{{ name }}{% endif %}</strong>{% if en %}{% if a.name_en %}<span>{{ a.name | escape }}</span>{% endif %}{% elsif a.name_en %}<span>{{ a.name_en | escape }}</span>{% endif %}</td><td class="thesis">{% if en %}<strong>{{ a.thesis_en | default: a.thesis | escape }}</strong>{% if a.thesis_en %}<span>{{ a.thesis | escape }}</span>{% endif %}{% else %}<strong>{{ a.thesis | escape }}</strong>{% if a.thesis_en %}<span>{{ a.thesis_en | escape }}</span>{% endif %}{% endif %}</td></tr>
+          {%- endfor %}
+        </tbody>
+        {%- endfor %}
+      </table>
+      <div class="empty-state" id="alumni-empty">{% if en %}No graduates match your search.{% else %}找不到符合條件的畢業生。{% endif %}</div>
+      </div>

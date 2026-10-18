@@ -1,0 +1,16 @@
+{%- capture maint %}<a href="{{ site.maintainer.url }}" target="_blank" rel="noopener">{{ site.maintainer.name }}</a>{% endcapture -%}
+{%- capture mail %}<a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a>{% endcapture -%}
+<div class="page-body">
+  <div class="container">
+    <div class="card terms">
+      {%- for term in site.data.disclaimer.terms %}
+      <section class="term">
+        <h2><span class="term-num">0{{ forloop.index }}</span>{% if page.lang == "en" %}{{ term.title_en }}{% else %}{{ term.title }} <span class="en">{{ term.title_en }}</span>{% endif %}</h2>
+        {%- if page.lang == "en" %}{% assign body = term.body_en %}{% else %}{% assign body = term.body %}{% endif %}
+        <p>{{ body | replace: "[maintainer]", maint | replace: "[email]", mail }}</p>
+      </section>
+      {%- endfor %}
+      <p class="terms-updated">{% if page.lang == "en" %}Last updated: {{ site.data.disclaimer.updated_en }}{% else %}最後更新：{{ site.data.disclaimer.updated }}{% endif %}</p>
+    </div>
+  </div>
+</div>

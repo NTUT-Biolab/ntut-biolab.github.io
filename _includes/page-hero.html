@@ -1,0 +1,15 @@
+{%- assign home = site.data.nav | first -%}
+{%- assign hk = page.lang | append: "_url" -%}
+<section class="page-hero"{% if include.style %} style="{{ include.style }}"{% endif %}>
+  <div class="container">
+    {%- unless include.no_crumb %}
+    <div class="breadcrumb"><a href="{{ home[hk] | relative_url }}">{{ home[page.lang] }}</a> / {{ include.crumb | default: include.title }}</div>
+    {%- endunless %}
+    <span class="eyebrow">{{ include.eyebrow }}</span>
+    <h1>{{ include.title }}</h1>
+    <p>{{ include.lead }}</p>
+    {%- if include.action %}
+    <div class="hero-actions" style="margin-top:28px">{{ include.action }}</div>
+    {%- endif %}
+  </div>
+</section>

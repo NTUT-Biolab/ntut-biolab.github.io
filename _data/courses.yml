@@ -1,0 +1,78 @@
+# 課程資訊。syllabus 為課程大綱 PDF 檔名，可省略。
+
+recent:
+  label: 108 學年度第一學期
+  label_en: Fall 2019
+  items:
+  - title: 數位影像處理
+    title_en: Digital Image Processing
+    level:
+    - 大學部／研究所
+    level_en:
+    - Undergraduate / Graduate
+    syllabus: Image1081_Sylla.pdf
+  - title: 電機資訊科技
+    title_en: Electrical Engineering and Information Technology
+    level:
+    - 大學部
+    level_en:
+    - Undergraduate
+other:
+- title: 計算生物學與醫學資訊
+  title_en: Computational Biology and Medical Informatics
+  level:
+  - 生醫資訊
+  level_en:
+  - Biomedical informatics
+- title: 進階生物資訊技術研究
+  title_en: Advanced Bioinformatics
+  level:
+  - 研究所
+  - 生醫資訊
+  level_en:
+  - Graduate
+  - Biomedical informatics
+- title: 影像分析與電腦視覺
+  title_en: Image Analysis and Computer Vision
+  level:
+  - 研究所
+  level_en:
+  - Graduate
+- title: 圖形識別
+  title_en: Pattern Recognition
+  level:
+  - 研究所
+  level_en:
+  - Graduate
+- title: 多媒體技術與應用
+  title_en: Multimedia Technology and Applications
+  level:
+  - 大學部
+  level_en:
+  - Undergraduate
+- title: 數位訊號處理
+  title_en: Digital Signal Processing
+  level:
+  - 大學部
+  level_en:
+  - Undergraduate
+- title: 訊號與系統
+  title_en: Signals and Systems
+  level:
+  - 大學部
+  level_en:
+  - Undergraduate
+- title: 電子電路學
+  title_en: Electrical Circuit and Electronics
+  level:
+  - 大學部
+  level_en:
+  - Undergraduate
+- title: 電子電路學實驗
+  title_en: Electronic Circuits Laboratory
+  level:
+  - 大學部
+  - 實驗
+  level_en:
+  - Undergraduate
+  - Laboratory
