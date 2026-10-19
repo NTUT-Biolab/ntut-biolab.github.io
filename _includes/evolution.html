@@ -1,0 +1,49 @@
+{%- assign en = false -%}{%- if page.lang == "en" -%}{%- assign en = true -%}{%- endif -%}
+<section class="section section-alt" id="evolution">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Research Evolution</span>
+      {%- if en %}
+      <h2>25 years of research, thesis by thesis</h2>
+      <p>Every graduate thesis since 2001, grouped by research area. The lab's focus has moved from image recognition and protein structures, through genomics, to medical big data, wearables and medical imaging AI.</p>
+      {%- else %}
+      <h2>從論文看 25 年研究演進</h2>
+      <p>自 2001 年起每一篇研究所畢業論文，依研究領域分類。實驗室的重心從影像辨識與蛋白質結構，走向基因體，再到醫療大數據、穿戴裝置與醫學影像 AI。</p>
+      {%- endif %}
+    </div>
+
+    <div class="card evo reveal" data-lang="{{ page.lang }}">
+      <div class="evo-head">
+        <h3 class="evo-title">{% if en %}Graduate theses per academic year{% else %}各學年度畢業論文數{% endif %}</h3>
+        <ul class="evo-legend">
+          {%- for tp in site.data.topics %}
+          {%- assign n = 0 %}{% for g in site.data.alumni %}{% assign c = g.graduates | where: "topic", tp.key | size %}{% assign n = n | plus: c %}{% endfor %}
+          <li><span class="evo-swatch" data-topic="{{ tp.key }}"></span>{% if en %}{{ tp.en | escape }}{% else %}{{ tp.zh }}{% endif %} <span class="evo-n">{{ n }}</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="evo-chart" role="img" aria-label="{% if en %}Stacked bar chart of graduate theses per academic year by research area, 2001–2025{% else %}各學年度畢業論文數依研究領域分類之堆疊長條圖（2001–2025）{% endif %}"></div>
+      <div class="evo-tip" role="status" aria-live="polite" hidden></div>
+      <details class="evo-table">
+        <summary>{% if en %}View as table{% else %}以表格檢視{% endif %}</summary>
+        <div class="evo-table-wrap"></div>
+      </details>
+    </div>
+
+    <ol class="eras">
+      {%- if en %}
+      <li class="reveal"><span class="era-when">2001–2008</span><h4>Image recognition &amp; protein structure</h4><p>Facial feature extraction, caricature synthesis, sequence pattern matching and multiple protein structure alignment.</p></li>
+      <li class="reveal"><span class="era-when">2009–2017</span><h4>The genomics era</h4><p>SSR biomarkers, comparative genomics, transcriptome analysis, KEGG pathways and epitope prediction.</p></li>
+      <li class="reveal"><span class="era-when">2018–2022</span><h4>Medical big data &amp; IoMT</h4><p>Disease trajectories, heart failure risk prediction, wearable devices and digital pathology.</p></li>
+      <li class="reveal"><span class="era-when">2023–</span><h4>Medical imaging AI &amp; language models</h4><p>Deep learning for pathology and edema grading, child development assessment, protein language models and LLMs.</p></li>
+      {%- else %}
+      <li class="reveal"><span class="era-when">2001–2008</span><h4>影像辨識與蛋白質結構</h4><p>人臉特徵擷取、卡通臉譜合成、序列樣式比對與多重蛋白質結構排比。</p></li>
+      <li class="reveal"><span class="era-when">2009–2017</span><h4>基因體時代</h4><p>SSR 生物標記、比較基因體、轉錄體分析、KEGG 生物路徑與抗原表位預測。</p></li>
+      <li class="reveal"><span class="era-when">2018–2022</span><h4>醫療大數據與物聯網</h4><p>疾病軌跡、心臟衰竭風險預測、穿戴式裝置與數位病理。</p></li>
+      <li class="reveal"><span class="era-when">2023–</span><h4>醫學影像 AI 與語言模型</h4><p>病理與水腫分級的深度學習、兒童發展評估、蛋白質語言模型與大型語言模型。</p></li>
+      {%- endif %}
+    </ol>
+  </div>
+  <script type="application/json" id="evo-data">{"topics":[{% for tp in site.data.topics %}{"key":{{ tp.key | jsonify }},"label":{% if en %}{{ tp.en | jsonify }}{% else %}{{ tp.zh | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}],"years":[{% for g in site.data.alumni %}[{{ g.year }},[{% for a in g.graduates %}{{ a.topic | default: "other" | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]]{% unless forloop.last %},{% endunless %}{% endfor %}]}</script>
+  <script src="{{ '/assets/js/evolution.js' | relative_url }}" defer></script>
+</section>
