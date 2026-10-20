@@ -10,7 +10,7 @@
 
 | 想做的事 | 修改的檔案 |
 | --- | --- |
-| 新增畢業生／論文 | `_data/alumni.yml`（新學年度加在最上面；`topic` 決定首頁研究演進圖的分類） |
+| 新增畢業生／論文 | `_data/alumni.yml`（新學年度加在最上面） |
 | 新增研究計畫 | `_data/projects.yml`（加在最上面；執行中填 `status: ongoing`） |
 | 更新課程 | `_data/courses.yml` |
 | 更新主持人經歷 | `_data/cv.yml` |
@@ -33,7 +33,6 @@
     name_en: Hsiao-Ming Wang
     thesis: 論文中文題目
     thesis_en: English Thesis Title
-    topic: imaging        # genomics / clinical / iomt / imaging / other
 ```
 
 ### 範例：新增一項研究計畫

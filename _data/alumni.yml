@@ -1,6 +1,5 @@
 # 歷屆研究所畢業生，依學年度由新到舊排列。
 # degree: phd（博士）或 ms（碩士）。name_en / thesis_en / link 可省略。
-# topic（研究演進圖用）：genomics 基因體與生物資訊、clinical 醫學巨量資訊、iomt 醫學物聯網、imaging 影像分析、other 其他。
 # 新增一位畢業生：在對應學年度的 graduates 底下加一筆；新學年度請加在最上面。
 
 - year: 114
@@ -11,7 +10,6 @@
     link: https://scholar.google.com/citations?user=lgOY-SoAAAAJ&hl=zh-TW
     thesis: 應用大型語言模型於網路威脅情資分析之研究
     thesis_en: A Study on Applying Large Language Models to Cyber Threat Intelligence Analysis
-    topic: other
 - year: 113
   graduates:
   - degree: phd
@@ -19,73 +17,61 @@
     name_en: Tao-Chuan Shih
     thesis: 以幾何深度學習與蛋白語言模型的融合策略的抗原表位預測系統
     thesis_en: Geometry-based Graph Neural Networks and Protein Language Model Fusion Strategies for Epitope Prediction
-    topic: genomics
   - degree: ms
     name: 黃士儼
     name_en: Shi-Yan Huang
     thesis: 膀胱癌血液和組織樣本DNA甲基化生物標記的表現評估比較分析
     thesis_en: Comparative Evaluation of DNA Methylation Biomarker Expression in Blood and Tissue Samples of Bladder Cancer
-    topic: genomics
   - degree: ms
     name: 王笙
     name_en: Sheng Wang
     thesis: 混合預測模型於醫藥銷售預測的應用
     thesis_en: Application of a Hybrid Forecasting Model in Pharmaceutical Sales Prediction
-    topic: other
   - degree: ms
     name: 黃品宥
     name_en: Pin-You Huang
     thesis: 應用側面步態評估幼兒粗大動作發展之自動化分析
     thesis_en: Automatic Analysis of Gross Motor Development in Toddlers Using Side-View Walking Pose Estimation
-    topic: iomt
   - degree: ms
     name: 胡庭瑋
     name_en: Ting-Wei Hu
     thesis: 基於深度學習和影像增強技術應用於下肢水腫檢測與等級分類之研究
     thesis_en: Research on Lower Limb Edema Detection and Grading Classification Using Deep Learning and Image Enhancement Technologies
-    topic: imaging
   - degree: ms
     name: 楊哲綸
     name_en: Che-Lun Yang
     thesis: 基於 ViT 和 Attention Bi-LSTM 的數位病理影像分類方法及其對細胞異常檢測的應用
     thesis_en: A Digital Pathology Image Classification Method Based on ViT and Attention Bi-LSTM and Its Application to Abnormal Cell Detection
-    topic: imaging
   - degree: ms
     name: 林俐雯
     name_en: Li-Wen Lin
     thesis: 基於FastGAN加入輔助分類器提升尿液細胞影像合成質量與可控性
     thesis_en: FastGAN with Auxiliary Classifiers for Enhanced Quality and Controllability in Urine Cell Image Synthesis
-    topic: imaging
   - degree: ms
     name: 陳維鈞
     name_en: Wei-Chun Chen
     thesis: 糖尿病腎病變之DNA甲基化生物標記分析
     thesis_en: DNA Methylation of Diabetic Kidney Disease with Gene Ontology and Reactome
-    topic: genomics
   - degree: ms
     name: 林煥智
     name_en: Huan-Chih Lin
     thesis: 基於類神經網路之可解釋性方法應用於疾病共病預測
     thesis_en: Application of Explainability Methods for Artificial Neural Networks in Comorbidity Prediction
-    topic: clinical
   - degree: ms
     name: 黃芬緯
     name_en: Fen-Wei Huang
     thesis: 甲基化基因生物標記應用於大腸直腸癌之預測分析
     thesis_en: Application of DNA Methylation Biomarkers in Predictive Analysis of Colorectal Cancer
-    topic: genomics
   - degree: ms
     name: 蔡嘉銨
     name_en: Chia-An Tsai
     thesis: 使用步態特徵進行幼兒粗大動作發展之自動分析
     thesis_en: Automatic Classification of Toddler Gross Motor Development Based on Gait Feature Analysis
-    topic: iomt
   - degree: ms
     name: 黃士銘
     name_en: Shih-Ming Huang
     thesis: 新冠疫情對美國肺部疾病醫療器械之召回根因關聯規則分析
     thesis_en: Association Rule Analysis of Medical Device Recall Causes for COVID-19 Impact on U.S. Pulmonary Disease
-    topic: clinical
 - year: 112
   graduates:
   - degree: ms
@@ -93,43 +79,36 @@
     name_en: Cheng-Han Yu
     thesis: 比較機器學習預測呼吸器相關肺炎死亡率與特徵分析
     thesis_en: Comparison of Different Machine Learning Models for Predicting Mortality and Feature Analysis in Ventilator-Associated Pneumonia
-    topic: clinical
   - degree: ms
     name: 黃乃軒
     name_en: Nai-Hsuan Huang
     thesis: 以手繪圖形影像評估兒童精細動作之自動辨識機制
     thesis_en: An Automatic Recognition Mechanism for Assessing Fine Motor Development through Hand-Drawn Shape Images in Children
-    topic: iomt
   - degree: ms
     name: 楊尹彰
     name_en: Yin-Chang Yang
     thesis: 基於動作特徵自動辨識嬰兒之粗大動作發展輔助評估研究
     thesis_en: Research on Automated Movements Recognition for Assistive Evaluation of Gross Motor Development in Infants
-    topic: iomt
   - degree: ms
     name: 林祐靖
     name_en: Yu-Ching Lin
     thesis: 基於深度學習技術應用於下肢水腫不同等級之自動分類
     thesis_en: Automatic Grading Scale Classification of Lower Limb Pitting Edema based on Deep Learning Approaches
-    topic: imaging
   - degree: ms
     name: 陳榮庭
     name_en: Jung-Ting Chen
     thesis: 基於CycleGAN恆等損失函數改進數位病理影像的染色正規化效果
     thesis_en: Improving the Stain Normalization of Digital Pathology Images Based on the Identity Loss Function of CycleGAN
-    topic: imaging
   - degree: ms
     name: 林宛佳
     name_en: Wan-Chia Lin
     thesis: 基於耳機蒐集的心跳速率與六軸慣性訊號以機器學習模組辨識睡眠期別
     thesis_en: Using Machine Learning Modules to Recognize Sleep Stages Based on Heart Rates and Six-axis Inertial Signals Collected by Headphones
-    topic: iomt
   - degree: ms
     name: 韓靖
     name_en: Jing Han
     thesis: 氣泡瑕疵自動檢測與修復實現應用於 IHC 數位病理影像
     thesis_en: Implementation of Automated Bubble Defect Detection and Repairment in IHC Pathological Images
-    topic: imaging
 - year: 111
   graduates:
   - degree: ms
@@ -137,48 +116,40 @@
     name_en: Yu-Hsun Huang
     thesis: 聯邦式學習模型應用於乳癌數位病理影像分析
     thesis_en: Application Of Federated Learning Models In Digital Pathological Image Analysis For Breast Cancer
-    topic: imaging
   - degree: ms
     name: 簡旭均
     name_en: Hsu-Chun Chien
     thesis: 心臟衰竭患者六分鐘步行測試之特徵分析
     thesis_en: Feature analysis of six minute walking test for heart failure patients
-    topic: iomt
   - degree: ms
     name: 梁博瑜
     name_en: Po-Yu Liang
     thesis: 基於電腦叢集的疾病基因關聯查詢系統及疾病相似度分析
     thesis_en: Disease-Gene Association Query System and Disease Similarity Analysis on Computer Cluster
-    topic: genomics
   - degree: ms
     name: 吳陽生
     name_en: Yang-Sheng Wu
     thesis: 透過彈性主樹揭示肌萎縮性側索硬化症之疾病發展
     thesis_en: Uncovering Disease Development of ALS Through Application of Elastic Principal Trees
-    topic: clinical
   - degree: ms
     name: Bhat Mahmood Hussain
     thesis: 通過組合超級公式和生成對抗網路資料擴增技術提升蘋果樹葉疾病之圖像分割
     thesis_en: Enhancing Apple Leaf Disease Segmentation through Combined Superformula and Generative Adversarial Networks Data Augmentation
-    topic: imaging
   - degree: ms
     name: 王星文
     name_en: Hsing-Wen Wang
     thesis: 綜整SMOTE與WCGAN-GP技術強化小型表格臨床試驗之混合資料擴增
     thesis_en: 'Enhancing Small Tabular Clinical Trial Data Through Hybrid Data Augmentation: Combining SMOTE and WCGAN-GP'
-    topic: clinical
   - degree: ms
     name: 唐岳
     name_en: Yueh Tang
     thesis: 使用比例式 Jaccard 指標辨識共病樣式及預測罹患心臟衰竭之高風險患者
     thesis_en: Using Proportional Jaccard Indices to Identify Comorbidity Patterns and to Predict High-risk Heart Failure Patients
-    topic: clinical
   - degree: ms
     name: 彭柏誠
     name_en: Po-Cheng Peng
     thesis: 以機器學習分析醫療紀錄的時間屬性以預測心臟衰竭之風險
     thesis_en: Using machine learning on time attribute of medical records to predict risk of heart failure
-    topic: clinical
 - year: 110
   graduates:
   - degree: ms
@@ -186,47 +157,39 @@
     name_en: Chia-Yen Ni
     thesis: 使用小波分析與波峰偵測輔助運動週期性呼吸之判斷
     thesis_en: Detection of Exercise Oscillatory Ventilation by Wavelet Transform and Local Maximum
-    topic: iomt
   - degree: ms
     name: VAIBHAV KUMAR SUNKARIA
     name_en: Vaibhav Kumar Sunkaria
     thesis: An Integrated Approach For Uncovering Novel DNA Methylation Biomarkers For Non-small Cell Lung Carcinoma
-    topic: genomics
   - degree: ms
     name: VINOTHINI SIVARAMAKRISHNAN
     name_en: Vinothini Sivaramakrishnan
     thesis: Identification and Comparison of DNA Methylation Biomarkers for Kidney Renal Clear Cell Carcinoma and Renal Papillary Cell Carcinoma
-    topic: genomics
   - degree: ms
     name: 許邦毅
     name_en: Pang-Yi Hsu
     thesis: 互動式病理組織影像之細胞核檢測系統
     thesis_en: Interactive nucleus detection system for histopathological imaging
-    topic: imaging
   - degree: ms
     name: 何韋辰
     name_en: Wei-Chen Ho
     thesis: 嬰幼兒神經發展之適應性評估追蹤系統
     thesis_en: An adaptive assessment tracking system for children's neurodevelopment
-    topic: iomt
   - degree: ms
     name: 歐陽緒
     name_en: Hsu Ou-Yang
     thesis: 使用類 U-Net 架構進行乳癌區域辨識的跨染色組織病理學影像分割
     thesis_en: Cross-Staining Histopathology Image Segmentation For Breast Cancer Area Detection Using U-Net-like Architecture
-    topic: imaging
   - degree: ms
     name: 黃彥穎
     name_en: Yan-Ying Huang
     thesis: 基於引導式對話之學齡前兒童語言能力分析
     thesis_en: Preschool children's speech ability analysis based on the guided conversation
-    topic: iomt
   - degree: ms
     name: 張育瑞
     name_en: Yu-Jui Chang
     thesis: 動態顏色反卷積系統應用於H&E影像染色分離
     thesis_en: Dynamic Color Deconvolution System applied to H&E Image stain separation
-    topic: imaging
 - year: 109
   graduates:
   - degree: ms
@@ -234,31 +197,26 @@
     name_en: Yun-Cen Luo
     thesis: 企業財務表單文件影像分析及資料擷取
     thesis_en: Image analysis and data acquisition of enterprise financial form documents
-    topic: imaging
   - degree: ms
     name: 楊亞政
     name_en: Ya-Cheng Yang
     thesis: 基於BERT語言模型之衛教機器人對話系統
     thesis_en: Health education chatbot system based on BERT language model
-    topic: clinical
   - degree: ms
     name: 蔣維
     name_en: Wei Chiang
     thesis: 疾病軌跡路徑分析與相對風險指標預測
     thesis_en: Disease trajectory analytics and relative risk prediction
-    topic: clinical
   - degree: ms
     name: 彭正鈦
     name_en: Cheng-Tai Peng
     thesis: 中文語音文字線上情緒辨識及應用
     thesis_en: Online Emotion Recognition and Application of Chinese Speech and Text
-    topic: other
   - degree: ms
     name: 譚榮棋
     name_en: Jung-Chi Tan
     thesis: 以手環及生物特徵預測心臟衰竭患者未來風險
     thesis_en: Predicting the future hazard of heart failure patients with smart watches and biometrics
-    topic: iomt
 - year: 108
   graduates:
   - degree: ms
@@ -266,7 +224,6 @@
     name_en: Tao-Chuan Shih
     thesis: 基於投票機制之虹彩病毒科與野田病毒科的宿主專一性抗原表位預測
     thesis_en: A voting mechanism-based linear epitope prediction system for the host-specific Iridoviridae and Nodaviridae
-    topic: genomics
 - year: 107
   graduates:
   - degree: ms
@@ -274,19 +231,16 @@
     name_en: Chung-Chi Hsiao
     thesis: 使用長鏈非編碼RNA相關性改善基因本體論之過表現分析
     thesis_en: Improving Overrepresentation Analysis of Gene Ontology based on Long Noncoding RNA Association
-    topic: genomics
   - degree: ms
     name: 劉晉睿
     name_en: Chin-Jui Liu
     thesis: 3D蛋白質列印之支撐架構設計及材料減量
     thesis_en: Supporting structure design and material reduction for 3D protein printing
-    topic: genomics
   - degree: ms
     name: 許少捷
     name_en: Shao-Chieh Hsu
     thesis: 於物聯網裝置輔助心臟衰竭患者之復健照護系統
     thesis_en: Auxiliary Rehabilitation Healthcare System for Heart Failure Patients Using Internet-of-Thing Devices
-    topic: iomt
 - year: 106
   graduates:
   - degree: ms
@@ -294,25 +248,21 @@
     name_en: Ying-Jie Liu
     thesis: KEGG生物路徑之完整子圖建構與分析
     thesis_en: Complete subgraph construction and analysis for KEGG biological pathways
-    topic: genomics
   - degree: phd
     name: 羅英倉
     name_en: Ying-Tsang Lo
     thesis: 抗原結合表面區塊分析與組合式抗原表位預測
     thesis_en: Antigen binding surface patch analysis and conformational epitope prediction
-    topic: genomics
   - degree: ms
     name: 劉俊成
     name_en: Chun-Cheng Liu
     thesis: 全轉錄體基因表現差異群組之強化KEGG生物路徑功能註解
     thesis_en: An enhanced KEGG biological pathway functional annotation for RNA-seq differentially expressed gene clusters
-    topic: genomics
   - degree: ms
     name: 張仰鈞
     name_en: Yang-Chun Chang
     thesis: 台灣吳郭魚特定功能基因群之簡單重複序列生物標記
     thesis_en: Functional simple sequence repeat (SSR) biomarkers for specific gene group of Taiwan tilapia
-    topic: genomics
 - year: 105
   graduates:
   - degree: phd
@@ -320,19 +270,16 @@
     name_en: Chien-Ming Chen
     thesis: 透過系統生物學強化RNA-seq表現差異分析流程
     thesis_en: Improving RNA-Seq Differential Expression Analysis through System Biology Approaches
-    topic: genomics
   - degree: ms
     name: 林琨祐
     name_en: Kun-You Lin
     thesis: DNA浮水印技術之研究與系統開發
     thesis_en: A Study on DNA Watermark Technology and System Development
-    topic: genomics
   - degree: ms
     name: 李冠荭
     name_en: Kuan-Hung Li
     thesis: 多物種選擇用於轉錄體功能分析
     thesis_en: Multiple Species Selection for Transcriptomics Sequencing and Functional Analysis
-    topic: genomics
 - year: 104
   graduates:
   - degree: ms
@@ -340,19 +287,16 @@
     name_en: Hung-Yi Cheng
     thesis: α螺旋蛋白質內部重複單元切割與分類
     thesis_en: Internal Repeat Segmentation and Subtype Classification of α-solenoid Proteins
-    topic: genomics
   - degree: ms
     name: 王騰緯
     name_en: Teng-Wei Wang
     thesis: 錨蛋白重複域之蛋白質序列辨識及功能分群
     thesis_en: Ankyrin Repeat Domain Sequence Identification and Functional Clustering
-    topic: genomics
   - degree: ms
     name: 張婉麗
     name_en: Wan-Li Chang
     thesis: 基於序列抗原特性與結構表面特徵之構象抗原表位預測
     thesis_en: Conformational Epitope Prediction based on Sequence Antigenicities and Surface Characteristics
-    topic: genomics
 - year: 103
   graduates:
   - degree: ms
@@ -360,7 +304,6 @@
     name_en: Yuan-Chi Peng
     thesis: 超音波影像與慢性腎臟病期數之關聯性分析
     thesis_en: Association analysis of stage of chronic kidney disease and ultrasonography
-    topic: imaging
 - year: 102
   graduates:
   - degree: phd
@@ -368,25 +311,21 @@
     name_en: Hsin-Wei Wang
     thesis: 蛋白質結構排比及彈性結構比對
     thesis_en: Protein structure alignment and flexible structure comparison
-    topic: genomics
   - degree: ms
     name: 陸宇倫
     name_en: Yu-Lun Lu
     thesis: 以基因本體論篩選管家基因進行基因表現量正規化分析
     thesis_en: Gene Expression Normalization by GO based Housekeeping Gene Selection
-    topic: genomics
   - degree: ms
     name: 蕭志邦
     name_en: Chi-Pong Sio
     thesis: 人類基因組之簡單重複序列多態性辨識
     thesis_en: Identification of SSR Polymorphisms for Human Genomes
-    topic: genomics
   - degree: ms
     name: 龔興浩
     name_en: Hsing-Hao Kung
     thesis: 基於共線區塊特徵進行魚類模式物種之基因體比較
     thesis_en: Comparative Genomics for Fishery Model Species based on Syntenic Blocks
-    topic: genomics
 - year: 101
   graduates:
   - degree: ms
@@ -394,31 +333,26 @@
     name_en: Jhen-Li Huang
     thesis: 跨物種簡單重複序列生物標記之辨識
     thesis_en: Identify Cross-Species Simple Sequence Repeat Biomarkers
-    topic: genomics
   - degree: ms
     name: 楊晴涵
     name_en: Cing-Han Yang
     thesis: 蛋白質序列分析與功能域邊界辨識
     thesis_en: Protein Sequence Analysis and Boundary Detection of Functional Domain
-    topic: genomics
   - degree: ms
     name: 陳煜倫
     name_en: Yu-Lun Chen
     thesis: 基於後綴樹演算法之同源共線性區塊偵測與辨識
     thesis_en: Homologous Synteny Block Detection and Recognition Based on Suffix Tree Algorithms
-    topic: genomics
   - degree: ms
     name: 彭奕翔
     name_en: Yi-Siang Peng
     thesis: 眼球表面臨床影像之眼角膜血管增生辨識
     thesis_en: Detecting corneal neovascularization based on clinical ocular surface images
-    topic: imaging
   - degree: ms
     name: 劉振隆
     name_en: Chen-Lung Liu
     thesis: 跨生物路徑資料庫探勘反饋迴路和耦合反饋迴路
     thesis_en: Discovering feedback and coupled feedback loops from integrated pathway databases
-    topic: genomics
 - year: 100
   graduates:
   - degree: ms
@@ -426,7 +360,6 @@
     name_en: Tsan-Huang Shih
     thesis: 轉錄體功能註解及跨物種比對分析
     thesis_en: Functional Annotation of Transcriptomic Data and Cross-species Comparison
-    topic: genomics
 - year: 99
   graduates:
   - degree: ms
@@ -434,25 +367,21 @@
     name_en: Chih-Yin Ho
     thesis: 青光眼特徵分析及自動臨床診斷系統建置
     thesis_en: An automatic fundus image analysis system for clinical diagnosis of glaucoma
-    topic: imaging
   - degree: ms
     name: 蔡岳霖
     name_en: Yueh-Lin Tsai
     thesis: 基於測地線距離特徵之形狀不變性描述子進行蛋白質表面比對之研究
     thesis_en: Deformation Invariant Descriptors Based on Geodesic Distance Features for Protein Surface Comparison
-    topic: genomics
   - degree: ms
     name: 莊家盛
     name_en: Chia-Sheng Chuang
     thesis: 使用生物途徑之映射模式進行同源基因之比對分析：以缺氧誘導因子為例
     thesis_en: Biological Pathway Mapping Model for Homologous Gene Comparison - A Case Study on Hypoxia-Inducible Factor
-    topic: genomics
   - degree: ms
     name: 羅英倉
     name_en: Ying-Tsang Lo
     thesis: 使用CUDA平行處理技術加速蛋白質結構表面之立體角性質比對分析
     thesis_en: Comparison of solid angle property on protein surfaces with CUDA acceleration
-    topic: genomics
 - year: 99
   graduates:
   - degree: ms
@@ -460,7 +389,6 @@
     name_en: Ya-Chi Lin
     thesis: 基於支持向量機及物理化學性質為基礎的線性抗原預測系統
     thesis_en: Linear Epitope Prediction Based on Support Vector Machine and Propensity Scale Method
-    topic: genomics
   note: 上學期
   note_en: Fall semester
 - year: 98
@@ -470,7 +398,6 @@
     name_en: Hua-Ying Kao
     thesis: 蛋白質序列及結構內部重複樣式之偵測
     thesis_en: Identification of Internal repeat Patterns within Proteins Sequences and Structures
-    topic: genomics
   note: 上學期
   note_en: Fall semester
 - year: 97
@@ -480,37 +407,31 @@
     name_en: Chih-Chia Chen
     thesis: 基於比較基因體偵測人類疾病基因的串聯重複序列
     thesis_en: Short Sequence Repeat Discovery for Human Disease Genes Based on Comparative Genomics
-    topic: genomics
   - degree: ms
     name: 陳典佑
     name_en: Tien-Yu Chen
     thesis: 多重蛋白質結構重疊之疊代精煉演算法
     thesis_en: Iterative Refinement Algorithm for Multiple Protein Structure Superposition
-    topic: genomics
   - degree: ms
     name: 吳偉國
     name_en: Wei-Kuo Wu
     thesis: 基於幾何特性之B細胞組合式抗原決定基預測系統
     thesis_en: Prediction of B-cell Conformational Epitopes by Geometrical Affinity and Propensity Approaches
-    topic: genomics
   - degree: ms
     name: 許雁筑
     name_en: Yen-Chu Hsu
     thesis: 結合疊代修正之混合式多重結構排比演算法
     thesis_en: A Hybrid Multiple Structure Alignment Algorithm with Iterative Refinement
-    topic: genomics
   - degree: ms
     name: 陳建銘
     name_en: Chien-Ming Chen
     thesis: 透過比較基因體學尋找具功能性的簡單重複序列
     thesis_en: Discovering Functional Simple Sequence Repeat through Comparative Genomics
-    topic: genomics
   - degree: ms
     name: 孫江曼
     name_en: Chiang-Man Sun
     thesis: 基於蛋白質二級結構間距離矩陣之多重結構排比
     thesis_en: Distance Matrix Analysis of Mutual Secondary Structure Pairs for Multiple Structure Alignment
-    topic: genomics
 - year: 96
   graduates:
   - degree: ms
@@ -518,13 +439,11 @@
     name_en: Chien-Chih Chen
     thesis: 臉部特徵擷取與中文視素轉換應用於卡通動畫合成
     thesis_en: Facial Feature Extraction and Chinese Text-to-Viseme for Cartoon Animation Synthesis
-    topic: imaging
   - degree: ms
     name: 鐘煒鈞
     name_en: Wei-Jun Zhung
     thesis: 基於抗原特性及幾何位置之組合式抗原決定基預測
     thesis_en: Conformational Epitope Prediction based on Geometrical relationship and Antigenic Characteristics
-    topic: genomics
 - year: 95
   graduates:
   - degree: ms
@@ -532,31 +451,26 @@
     name_en: Chih-Hong Liu
     thesis: 以數學形態學為基礎之生化濾波器應用於線性抗原預測
     thesis_en: Mathematical Morphology Based Biochemical Property Filters for Linear Epitope Prediction
-    topic: genomics
   - degree: ms
     name: 唐正英
     name_en: Cheng-Ying Tang
     thesis: 改進Effort-Moderated試題反應模型之研究
     thesis_en: A Research on Improved Effort-Moderated Item Response Model
-    topic: other
   - degree: ms
     name: 王信偉
     name_en: Hsin-Wei Wang
     thesis: 建構一個動態筆墨技術為基礎之數位學習系統
     thesis_en: Construction of a Dynamic Ink Technology Based E-Learning System
-    topic: other
   - degree: ms
     name: 張瑞祥
     name_en: Ruei-Hsiang Chang
     thesis: 以二級結構幾何關聯為基礎之多重結構排比
     thesis_en: Multiple Structure Alignment Based on Geometrical Correlation of Secondary Structure Elements
-    topic: genomics
   - degree: ms
     name: 徐肇陽
     name_en: Chao-Yang Hsu
     thesis: 具多重樣板偵測機制之人臉特徵自動擷取系統
     thesis_en: An Automatic Facial Feature Extraction System with Multiple Template Detection Mechanism
-    topic: imaging
 - year: 94
   graduates:
   - degree: ms
@@ -564,25 +478,21 @@
     name_en: Chun-Kai Huang
     thesis: 個人卡通臉譜繪畫風格轉換與誇張化技術之探討
     thesis_en: The Research on Painting Style Transformation and Exaggeration for Customized Cartoon Caricatures
-    topic: imaging
   - degree: ms
     name: 蘇柏翰
     name_en: Bo-Han Su
     thesis: 限制性多重蛋白質結構特徵排比應用於唯一樣式之偵測
     thesis_en: Constrained Multiple Protein Structure Feature Alignment for Unique Pattern Detection
-    topic: genomics
   - degree: ms
     name: 張柏豪
     name_en: Po-How Chang
     thesis: 應用於數學數位教學環境之手繪幾何圖形辨識
     thesis_en: Online Hand-Drawn Geometric Shape Recognition for the Application of Mathematics E-Teaching Environments
-    topic: imaging
   - degree: ms
     name: 周偉堯
     name_en: Wei-Yao Chou
     thesis: 多重索引序列排比應用於群組特徵擷取之研究
     thesis_en: A Study on Group Feature Extraction Based on Multiple Indexing Sequence Alignment
-    topic: genomics
 - year: 93
   graduates:
   - degree: ms
@@ -590,13 +500,11 @@
     name_en: Pei-Chih Wu
     thesis: 近似特徵比對技術應用於唯一樣式之偵測
     thesis_en: Approximate Feature Matching Techniques for Unique Pattern Detection
-    topic: genomics
   - degree: ms
     name: 張為元
     name_en: Wei-Yuan Chang
     thesis: 區間跳躍演算法應用於階層式群體特徵擷取與分析
     thesis_en: Hierarchical Group Feature Extraction and Analysis Based on Interval Jumping Algorithms
-    topic: genomics
 - year: 92
   graduates:
   - degree: ms
@@ -604,19 +512,16 @@
     name_en: Jia-Han Chu
     thesis: 具可變長度及容忍度特徵之字串搜尋比對演算法
     thesis_en: Efficient Pattern Matching Algorithms for Variable-Length and Tolerant Strings
-    topic: genomics
   - degree: ms
     name: 張福生
     name_en: Fu-Sheng Chang
     thesis: 以ASM為基礎之人臉特徵擷取系統
     thesis_en: ASM-Based Facial Feature Extraction Systems
-    topic: imaging
   - degree: ms
     name: 董致成
     name_en: Jr-Cheng Dung
     thesis: 卡通臉譜特徵向量之分群與合成
     thesis_en: Feature Clustering and Synthesis of Caricatures
-    topic: imaging
 - year: 91
   graduates:
   - degree: ms
@@ -624,7 +529,6 @@
     name_en: Chih-Yao Yang
     thesis: 基於人臉影像與臉譜特徵向量之二維卡通臉譜系統
     thesis_en: Facial Image and Customized Feature-Vector Based 2D Caricature Generating Systems
-    topic: imaging
 - year: 90
   graduates:
   - degree: ms
@@ -632,10 +536,8 @@
     name_en: Wen-Jung Juang
     thesis: 一種應用於車速自動偵測之適應性比對演算法
     thesis_en: Adaptive Windowing Predication for Vehicle Speed Estimation
-    topic: imaging
   - degree: ms
     name: 蔡顏丞
     name_en: Yen-Cheng Tsai
     thesis: 動態邊界偵測在微陣列影像上的分析
     thesis_en: Microarray Image Analysis by Active Contour Models
-    topic: imaging
