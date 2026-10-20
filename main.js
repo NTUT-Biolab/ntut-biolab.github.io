@@ -133,6 +133,110 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
   }
 
+  // ── Hero network animation (home page) ──
+  const hero = document.querySelector('.hero');
+  if (hero && !reduce) {
+    const canvas = document.createElement('canvas');
+    canvas.className = 'hero-canvas';
+    canvas.setAttribute('aria-hidden', 'true');
+    hero.prepend(canvas);
+    hero.classList.add('has-canvas');
+    const ctx = canvas.getContext('2d');
+    const LINK = 150;
+    let w = 0, h = 0, nodes = [], running = false, visible = true, raf = 0;
+    const pointer = { x: -9999, y: -9999 };
+
+    const resize = () => {
+      const dpr = Math.min(devicePixelRatio || 1, 2);
+      w = hero.clientWidth; h = hero.clientHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      // Denser on the right, behind the PI card; fewer nodes on small screens
+      const count = Math.round(Math.min(90, w * h / 11000));
+      nodes = Array.from({ length: count }, () => {
+        const right = Math.random() < .7;
+        return {
+          x: right ? w * (.45 + Math.random() * .55) : Math.random() * w * .45,
+          y: Math.random() * h,
+          vx: (Math.random() - .5) * .25,
+          vy: (Math.random() - .5) * .25,
+          r: Math.random() < .2 ? 2.6 : 1.6,
+        };
+      });
+    };
+
+    const frame = () => {
+      ctx.clearRect(0, 0, w, h);
+      for (const n of nodes) {
+        // Gentle pull toward the pointer
+        const dx = pointer.x - n.x, dy = pointer.y - n.y, d2 = dx * dx + dy * dy;
+        if (d2 < 32000) { n.vx += dx * 8e-5; n.vy += dy * 8e-5; }
+        n.vx *= .985; n.vy *= .985;
+        const sp = Math.hypot(n.vx, n.vy);
+        if (sp > .9) { n.vx *= .9 / sp; n.vy *= .9 / sp; }
+        n.vx += (Math.random() - .5) * .01; n.vy += (Math.random() - .5) * .01;
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < -20) n.x = w + 20; else if (n.x > w + 20) n.x = -20;
+        if (n.y < -20) n.y = h + 20; else if (n.y > h + 20) n.y = -20;
+      }
+      ctx.lineWidth = 1;
+      for (let i = 0; i < nodes.length; i++) {
+        const a = nodes[i];
+        for (let j = i + 1; j < nodes.length; j++) {
+          const b = nodes[j], dx = a.x - b.x, dy = a.y - b.y, d = Math.hypot(dx, dy);
+          if (d < LINK) {
+            ctx.strokeStyle = `rgba(95,211,218,${(1 - d / LINK) * .38})`;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+      }
+      ctx.fillStyle = 'rgba(138,230,236,.85)';
+      for (const n of nodes) { ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill(); }
+      raf = requestAnimationFrame(frame);
+    };
+    const start = () => { if (!running && visible && !document.hidden) { running = true; raf = requestAnimationFrame(frame); } };
+    const stop = () => { running = false; cancelAnimationFrame(raf); };
+
+    resize();
+    start();
+    let rt;
+    addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(resize, 150); });
+    hero.addEventListener('pointermove', e => {
+      const r = hero.getBoundingClientRect();
+      pointer.x = e.clientX - r.left; pointer.y = e.clientY - r.top;
+    });
+    hero.addEventListener('pointerleave', () => { pointer.x = pointer.y = -9999; });
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; visible ? start() : stop(); }).observe(hero);
+    document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
+  }
+
+  // ── Subtle 3D tilt on research cards (mouse only) ──
+  if (!reduce && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.querySelectorAll('.research-card').forEach(card => {
+      card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5;
+        card.style.transform = `perspective(900px) rotateX(${(-py * 4).toFixed(2)}deg) rotateY(${(px * 5).toFixed(2)}deg) translateY(-3px)`;
+      });
+      card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+    });
+  }
+
+  // ── Reading progress bar ──
+  const bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  bar.setAttribute('aria-hidden', 'true');
+  document.body.append(bar);
+  let ticking = false;
+  const progress = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? Math.min(1, scrollY / max) : 0})`;
+    ticking = false;
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(progress); } }, { passive: true });
+  progress();
+
   // ── Footer year ──
   const year = document.querySelector('#year');
   if (year) year.textContent = new Date().getFullYear();
