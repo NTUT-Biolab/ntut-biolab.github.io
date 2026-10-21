@@ -13,7 +13,7 @@ zh:
   switch_text: EN
   home: 首頁
   footer_sub: Biomedical Informatics Lab
-  footer_about: 國立臺北科技大學 資訊工程系<br>白敦文教授研究團隊 — 以資料科學與人工智慧推動精準醫療。
+  footer_about: 國立臺北科技大學 資訊工程系<br>白敦文教授研究團隊
   footer_nav: 網站導覽
   footer_contact: 聯絡資訊
   csie: 北科大資訊工程系 ↗
@@ -35,7 +35,7 @@ en:
   switch_text: 中
   home: Home
   footer_sub: National Taipei University of Technology
-  footer_about: Department of Computer Science and Information Engineering, National Taipei University of Technology.<br>Prof. Tun-Wen Pai's research group — advancing precision medicine with data science and AI.
+  footer_about: Department of Computer Science and Information Engineering, National Taipei University of Technology.<br>Prof. Tun-Wen Pai's research group.
   footer_nav: Explore
   footer_contact: Contact
   csie: NTUT CSIE ↗

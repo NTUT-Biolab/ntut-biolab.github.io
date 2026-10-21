@@ -4,13 +4,13 @@
   <div class="container">
     <div class="cta reveal">
       <div>
-        <span class="eyebrow">Join Us</span>
+        <span class="eyebrow">Contact</span>
         {%- if en %}
-        <h2>Passionate about biomedical AI? Join us.</h2>
-        <p>The lab welcomes master's, Ph.D. and undergraduate project students. If our research interests you, please get in touch by email.</p>
+        <h2>Get in touch</h2>
+        <p>If you are interested in our research, please contact us by email.</p>
         {%- else %}
-        <h2>歡迎對生醫 AI 有熱忱的你加入</h2>
-        <p>實驗室長期招收碩士生、博士生與大學部專題生。對研究主題有興趣，歡迎來信洽詢。</p>
+        <h2>聯絡我們</h2>
+        <p>對實驗室研究主題有興趣，歡迎來信洽詢。</p>
         {%- endif %}
         <div class="hero-actions">
           <a class="btn btn-primary" href="mailto:{{ site.lab.email }}?subject=%5B%E5%AF%A6%E9%A9%97%E5%AE%A4%E6%B4%BD%E8%A9%A2%5D">{% include icon.html name="mail" %} {% if en %}Email us{% else %}來信洽詢{% endif %}</a>
@@ -20,7 +20,7 @@
       </div>
       <ul class="contact-list">
         <li><span class="ci">{% include icon.html name="mail" %}</span><div><div class="cl">E-MAIL</div><div class="cv"><a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a></div></div></li>
-        <li><span class="ci">{% include icon.html name="phone" %}</span><div><div class="cl">PHONE</div><div class="cv">{{ site.lab.phone_office }}{% if en %} (Office){% else %}（辦公室）{% endif %}<br>{{ site.lab.phone_lab }}{% if en %} (Lab){% else %}（實驗室）{% endif %}</div></div></li>
+        <li><span class="ci">{% include icon.html name="phone" %}</span><div><div class="cl">PHONE</div><div class="cv">{{ site.lab.phone_office }}{% if en %} (Office){% else %}（辦公室）{% endif %}</div></div></li>
         <li><span class="ci">{% include icon.html name="building" %}</span><div><div class="cl">LAB</div><div class="cv">{% if en %}{{ site.lab.room_en }}{% else %}{{ site.lab.room }}{% endif %}</div></div></li>
         <li><span class="ci">{% include icon.html name="pin" %}</span><div><div class="cl">ADDRESS</div><div class="cv">{% if en %}{{ site.lab.address_en }}<br>National Taipei University of Technology{% else %}{{ site.lab.address }}<br>國立臺北科技大學{% endif %}</div></div></li>
       </ul>

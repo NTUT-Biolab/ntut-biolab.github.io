@@ -47,9 +47,6 @@
   - name: Computers in Biology and Medicine
     note: Elsevier
     url: https://www.sciencedirect.com/journal/computers-in-biology-and-medicine
-  - name: Journal of Computational Biology
-    note: Mary Ann Liebert
-    url: https://www.liebertpub.com/journal/cmb
   - name: Algorithms for Molecular Biology
     note: BioMed Central
     url: https://almob.biomedcentral.com/
@@ -81,22 +78,10 @@
   - name: Evolutionary Bioinformatics
     note: SAGE
     url: https://journals.sagepub.com/home/evb
-- title: 研討會
-  title_en: Conferences
+- title: 學會
+  title_en: Societies
   icon: calendar
   links:
-  - name: ISMB
-    note: Intelligent Systems for Molecular Biology (ISCB)
+  - name: ISCB
+    note: International Society for Computational Biology (ISMB)
     url: https://www.iscb.org/
-  - name: RECOMB
-    note: Research in Computational Molecular Biology
-    url: https://www.recomb.org/
-  - name: IEEE BIBM
-    note: Bioinformatics and Biomedicine
-    url: https://ieeebibm.org/
-  - name: ACM BCB
-    note: Bioinformatics, Computational Biology & Health Informatics
-    url: https://acm-bcb.org/
-  - name: Cell Symposia
-    note: Systems & Computational Biology
-    url: https://www.cell.com/symposia

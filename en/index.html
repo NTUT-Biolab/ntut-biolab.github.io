@@ -14,7 +14,7 @@ jsonld: true
       <p class="hero-lead">Built on bioinformatics and medical informatics, we combine machine learning, image analysis and IoT technologies to advance cancer biomarker discovery, early childhood developmental delay diagnosis and personalized medicine.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#research">Explore our research {% include icon.html name="arrow" %}</a>
-        <a class="btn btn-light" href="#contact">Join us</a>
+        <a class="btn btn-light" href="#contact">Contact</a>
       </div>
       <div class="hero-tags"><span>Bioinformatics</span><span>Medical AI</span><span>Disease Trajectory</span><span>IoMT</span><span>Digital Pathology</span></div>
     </div>
@@ -34,9 +34,9 @@ jsonld: true
 <section class="stats" aria-label="Lab at a glance">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat"><div class="stat-num" data-count="{{ stat_years }}" data-since="{{ site.lab.founded }}">{{ stat_years }}<sup>+</sup></div><div class="stat-label">years of research</div></div>
+      <div class="stat"><div class="stat-num" data-count="{{ stat_phd }}">{{ stat_phd }}</div><div class="stat-label">Ph.D. graduates</div></div>
       <div class="stat"><div class="stat-num" data-count="{{ stat_total }}">{{ stat_total }}</div><div class="stat-label">graduate alumni</div></div>
-      <div class="stat"><div class="stat-num" data-count="{{ stat_projects }}">{{ stat_projects }}<sup>+</sup></div><div class="stat-label">funded projects</div></div>
+      <div class="stat"><div class="stat-num" data-count="{{ stat_projects }}">{{ stat_projects }}</div><div class="stat-label">funded projects (2006–2020)</div></div>
       <div class="stat"><div class="stat-num" data-count="{{ site.data.research.size }}">{{ site.data.research.size }}</div><div class="stat-label">core research areas</div></div>
     </div>
   </div>
@@ -62,12 +62,12 @@ jsonld: true
       <span class="eyebrow">Principal Investigator</span>
       <h3>Tun-Wen Pai<span class="en">白敦文</span></h3>
       <p class="about-role">Vice President, NTUT · Professor, Dept. of CSIE</p>
-      <p>Prof. Tun-Wen Pai received his Ph.D. in Electrical and Computer Engineering from Duke University. He has served as Chair of the Department of Computer Science and Engineering and Director of the Center for Genomics and Bioinformatics at National Taiwan Ocean University, and as Department Chair of CSIE and Director of International Affairs at NTUT. His research focuses on bioinformatics, medical informatics, early childhood developmental delay diagnosis and cancer biomarker discovery.</p>
+      <p>Prof. Tun-Wen Pai received his Ph.D. in Electrical and Computer Engineering from Duke University. He has served as Department Chair and as Director of the Center for Genomics and Bioinformatics at National Taiwan Ocean University, and as Department Chair of CSIE and Director of International Affairs at NTUT. His research focuses on bioinformatics, medical informatics, early childhood developmental delay diagnosis and cancer biomarker discovery.</p>
       <dl class="facts">
         <div class="fact"><dt>Education</dt><dd>Ph.D., Duke University<br>MSE, Johns Hopkins University</dd></div>
         <div class="fact"><dt>Adjunct</dt><dd>Adjunct Professor<br>National Taiwan Ocean University</dd></div>
         <div class="fact"><dt>Office</dt><dd>{{ site.lab.office_en }}<br>{{ site.lab.phone_office }}</dd></div>
-        <div class="fact"><dt>Lab</dt><dd>{{ site.lab.room_en }}<br>{{ site.lab.phone_lab }}</dd></div>
+        <div class="fact"><dt>Lab</dt><dd>{{ site.lab.room_en }}</dd></div>
       </dl>
       <div class="profile-links">
         <a class="btn btn-primary btn-sm" href="{{ '/en/pi.html' | relative_url }}">Curriculum vitae {% include icon.html name="arrow" %}</a>

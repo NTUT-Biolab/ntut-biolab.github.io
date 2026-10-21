@@ -17,10 +17,8 @@ maintainer:
   url: https://stwater20.github.io/
 
 lab:
-  founded: 2001            # 首屆研究生畢業年，首頁「年研究耕耘」由此自動計算
   email: twp@ntut.edu.tw
   phone_office: "(02) 2771-2171 #4222"
-  phone_lab: "(02) 2771-2171 #4269"
   phone_vp: "(02) 2771-2171 #1091"
   office: 宏裕科技研究大樓 1524 室
   office_en: Room 1524, Hong-Yue Technology Research Building

@@ -1,6 +1,6 @@
 {%- assign c = include.course -%}
 {%- if page.lang == "en" -%}{%- assign levels = c.level_en -%}{%- else -%}{%- assign levels = c.level -%}{%- endif -%}
-{%- capture tags %}<div class="tags">{% for x in levels %}<span class="badge">{{ x }}</span>{% endfor %}</div>{% endcapture -%}
+{%- capture tags %}{% if levels %}<div class="tags">{% for x in levels %}<span class="badge">{{ x }}</span>{% endfor %}</div>{% endif %}{% endcapture -%}
 {%- if c.syllabus %}
         <a class="card course" href="{{ c.syllabus | relative_url }}" target="_blank" rel="noopener"><h3>{% if page.lang == "en" %}{{ c.title_en }}{% else %}{{ c.title }}{% endif %}</h3>{% unless page.lang == "en" %}<p>{{ c.title_en }}</p>{% endunless %}<span class="more">{% if page.lang == "en" %}Syllabus (PDF) ↗{% else %}課程大綱 PDF ↗{% endif %}</span>{{ tags }}</a>
 {%- else %}
