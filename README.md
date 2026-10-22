@@ -39,7 +39,6 @@
 
 ```yaml
 - title: 計畫中文名稱
-  title_en: English project title
   code: NSTC 114-2221-E-027-XXX
   role: pi                # pi 或 co-pi
   period: 114/08 ~ 115/07
