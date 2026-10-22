@@ -21,7 +21,7 @@
 | 修改導覽列 | `_data/nav.yml` |
 | 修改頁首／頁尾文字 | `_data/ui.yml` |
 
-首頁的「畢業研究生」「研究計畫」數量會依資料檔自動計算，「年研究耕耘」由 `_config.yml` 的 `lab.founded` 自動計算。
+首頁的畢業研究生、博士與研究計畫數量會依資料檔自動計算。
 
 ### 範例：新增一位畢業生
 
@@ -39,7 +39,6 @@
 
 ```yaml
 - title: 計畫中文名稱
-  title_en: English project title
   code: NSTC 114-2221-E-027-XXX
   role: pi                # pi 或 co-pi
   period: 114/08 ~ 115/07

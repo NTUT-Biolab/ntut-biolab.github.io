@@ -51,12 +51,6 @@
 
   // ── Count-up stats ──
   const nums = document.querySelectorAll('[data-count]');
-  // Years since founding stay current between site rebuilds
-  nums.forEach(el => {
-    if (!el.dataset.since) return;
-    el.dataset.count = new Date().getFullYear() - +el.dataset.since;
-    el.firstChild.nodeValue = el.dataset.count;
-  });
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (nums.length && !reduce && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => {

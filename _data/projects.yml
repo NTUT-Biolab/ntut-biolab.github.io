@@ -3,7 +3,6 @@
 # status 可省略（預設顯示「已結案」）；進行中的計畫請填 status: ongoing。
 
 - title: 結合共病疾病軌跡分析及創新智慧型穿戴式裝置用於心臟衰竭患者之醫療照護
-  title_en: Integrating Comorbidity Disease Trajectory Analysis and Innovative Smart Wearable Devices for the Healthcare of Heart Failure Patients
   code: MOST 108-2221-E-027-090
   role: pi
   period: 108/08 ~ 109/07
@@ -11,7 +10,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 以次世代定序技術開發水產生物健康腸胃道菌相生物製劑並增進其腸道免疫功能（提升石斑魚免疫力及抗病能力的腸道菌相確認及其應用 2/3）
-  title_en: Developing Gut Microbiota Biologics for Aquatic Animal Health and Intestinal Immunity Using Next-Generation Sequencing (Identification and Application of Gut Microbiota for Improving Immunity and Disease Resistance in Grouper, 2/3)
   code: MOST 107-3114-B-019-001
   role: co-pi
   period: 108/05 ~ 109/04
@@ -19,7 +17,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 結合早產婦女疾病軌跡樣式與外顯子定序技術協助建構早產生物標記測試套件
-  title_en: Integrating Disease Trajectory Patterns of Pregnant Women and Exome Sequencing to Build a Preterm Birth Biomarker Test Kit
   code: MOST 107-2622-E-019-005-CC3
   role: pi
   period: 107/11 ~ 108/10
@@ -27,7 +24,6 @@
   agency: 科技部
   agency_en: MOST
 - title: HIF、Survivin與Epo基因網路調節氧化壓力與促進神經分化的機制 (3/3)
-  title_en: Mechanisms of the HIF, Survivin and Epo Gene Network in Regulating Oxidative Stress and Promoting Neural Differentiation (3/3)
   code: MOST 107-2313-B-027-001
   role: pi
   period: 107/08 ~ 108/07
@@ -35,7 +31,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 以次世代定序技術開發水產生物健康腸胃道菌相生物製劑 (2/3)
-  title_en: Developing Gut Microbiota Biologics for Aquatic Animal Health Using Next-Generation Sequencing (2/3)
   code: MOST 107-3114-B-019-001
   role: co-pi
   period: 107/05 ~ 108/04
@@ -43,7 +38,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 新型物種之功能基因群辨識及其相關串聯重複標誌搜尋 (2/2)
-  title_en: Identification of Functional Gene Groups and Associated Tandem Repeat Markers in Novel Species (2/2)
   code: MOST 105-2221-E-019-065-MY2
   role: pi
   period: 106/08 ~ 107/07
@@ -51,7 +45,6 @@
   agency: 科技部
   agency_en: MOST
 - title: HIF、Survivin與Epo基因網路 (2/3)
-  title_en: The HIF, Survivin and Epo Gene Network (2/3)
   code: MOST 106-2313-B-019-002
   role: pi
   period: 106/08 ~ 107/07
@@ -59,7 +52,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 以生物標記預測早產及早產兒腦部傷害
-  title_en: Predicting Preterm Birth and Brain Injury in Preterm Infants Using Biomarkers
   code: MOST 106-3114-B-195-001
   role: co-pi
   period: 106/05 ~ 107/04
@@ -67,7 +59,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 以次世代定序技術開發水產生物健康腸胃道菌相生物製劑 (1/3)
-  title_en: Developing Gut Microbiota Biologics for Aquatic Animal Health Using Next-Generation Sequencing (1/3)
   code: MOST 106-3114-B-019-001
   role: co-pi
   period: 106/05 ~ 107/04
@@ -75,7 +66,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 開發3D列印支撐功能核心模組 (2/3)
-  title_en: Developing Core Support-Structure Modules for 3D Printing (2/3)
   code: MOST 105-2218-E-019-001
   role: co-pi
   period: 105/11 ~ 106/10
@@ -83,7 +73,6 @@
   agency: 科技部
   agency_en: MOST
 - title: HIF、Survivin與Epo基因網路 (1/3)
-  title_en: The HIF, Survivin and Epo Gene Network (1/3)
   code: MOST 105-2313-B-019-001
   role: pi
   period: 105/08 ~ 106/07
@@ -91,7 +80,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 新型物種之功能基因群辨識及其相關串聯重複標誌搜尋 (1/2)
-  title_en: Identification of Functional Gene Groups and Associated Tandem Repeat Markers in Novel Species (1/2)
   code: MOST 105-2221-E-019-065-MY2
   role: pi
   period: 105/08 ~ 106/07
@@ -99,14 +87,12 @@
   agency: 科技部
   agency_en: MOST
 - title: 醫療巨量資料檢視、分析及動態視覺化工具開發
-  title_en: Development of Tools for Viewing, Analyzing and Dynamically Visualizing Medical Big Data
   role: co-pi
   period: 105/08 ~ 106/07
   period_en: 2016/08 – 2017/07
   agency: 科技部
   agency_en: MOST
 - title: 次世代整合系統應用於心臟衰竭之預後分析及策略性醫療照護
-  title_en: A Next-Generation Integrated System for Prognostic Analysis and Strategic Healthcare of Heart Failure
   code: MOST 104-2321-B-019-009
   role: pi
   period: 104/09 ~ 105/08
@@ -114,7 +100,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 開發3D列印支撐功能核心模組 (1/3)
-  title_en: Developing Core Support-Structure Modules for 3D Printing (1/3)
   code: MOST 104-2218-E-019-003
   role: co-pi
   period: 104/11 ~ 105/10
@@ -122,7 +107,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 低氧訊息網路的系統與演化生物學研究（子計畫4）(3/3)
-  title_en: Systems and Evolutionary Biology of Hypoxia Signaling Networks (Subproject 4, 3/3)
   code: MOST 104-2627-B-019-003
   role: pi
   period: 104/08 ~ 105/07
@@ -130,7 +114,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 養殖魚種骨骼發育及抗病分子標記之資料庫建置與輔助育種應用研究
-  title_en: Database Construction of Molecular Markers for Skeletal Development and Disease Resistance in Farmed Fish and Its Application to Assisted Breeding
   code: MOST 104-2321-B-019-008
   role: pi
   period: 104/08 ~ 105/07
@@ -138,7 +121,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 比較轉錄體資料集之正規化技術研究
-  title_en: Normalization Techniques for Comparative Transcriptome Datasets
   code: MOST 103-2221-E-019-037
   role: pi
   period: 103/08 ~ 104/07
@@ -146,7 +128,6 @@
   agency: 科技部
   agency_en: MOST
 - title: 低氧訊息網路（子計畫4）(2/3)
-  title_en: Hypoxia Signaling Networks (Subproject 4, 2/3)
   code: MOST 103-2627-B-019-003
   role: pi
   period: 103/08 ~ 104/07
@@ -154,14 +135,12 @@
   agency: 科技部
   agency_en: MOST
 - title: 建立以病人為中心之疾病教育網絡軟體
-  title_en: Developing Patient-Centered Disease Education Network Software
   role: co-pi
   period: 102/01 ~ 104/07
   period_en: 2013/01 – 2015/07
   agency: 長海計畫
-  agency_en: CGMH–NTOU Joint Program
+  agency_en: Chang-Hai Program (長海計畫)
 - title: 低氧誘導反應之轉錄體比對平台開發與互連動態生物訊息路徑建構
-  title_en: A Transcriptome Comparison Platform for Hypoxia-Induced Responses and Construction of Interconnected Dynamic Signaling Pathways
   code: NSC102-2627-B-019-003
   role: pi
   period: 102/08 ~ 103/07
@@ -169,7 +148,6 @@
   agency: 國科會
   agency_en: NSC
 - title: 基於物理化學特性及內容組合特徵進行構型抗原表位與抗體對位預測
-  title_en: Conformational Epitope and Paratope Prediction Based on Physicochemical Properties and Compositional Features
   code: NSC102-2221-E-019-059
   role: pi
   period: 102/08 ~ 103/07
@@ -177,7 +155,6 @@
   agency: 國科會
   agency_en: NSC
 - title: 台灣農業生物多樣性基因資料庫整合建置及跨物種比對核心技術服務
-  title_en: Integrated Construction of Taiwan Agricultural Biodiversity Gene Databases and Core Cross-Species Comparison Services
   code: NSC102-2321-B-019-001
   role: pi
   period: 102/01 ~ 102/12
@@ -185,7 +162,6 @@
   agency: 國科會
   agency_en: NSC
 - title: 台灣農業生物多樣性基因體資料庫及跨物種比對核心技術之建置與服務
-  title_en: Construction and Services of Taiwan Agricultural Biodiversity Genome Databases and Core Cross-Species Comparison Technologies
   code: NSC 101-2321-B-019-001
   role: pi
   period: 101/01 ~ 101/12
@@ -193,7 +169,6 @@
   agency: 國科會
   agency_en: NSC
 - title: 台灣農業生物多樣性基因體資料庫及跨物種比對核心技術之建置與服務
-  title_en: Construction and Services of Taiwan Agricultural Biodiversity Genome Databases and Core Cross-Species Comparison Technologies
   code: NSC 100-2321-B-019-004
   role: pi
   period: 100/02 ~ 101/01
@@ -203,9 +178,7 @@
   output:
     url: http://tagc.cs.ntou.edu.tw/
     text: 台灣農業生物多樣性基因體資料庫
-    text_en: Taiwan Agricultural Biodiversity Genome Database
 - title: 慢性腎病之超音波影像指標測量分析與臨床分期相關性之研究
-  title_en: Ultrasound Image Index Measurement and Its Correlation with the Clinical Staging of Chronic Kidney Disease
   code: 99529001K
   role: co-pi
   period: 100/05 ~ 100/04
@@ -213,7 +186,6 @@
   agency: 長庚醫院/海洋大學
   agency_en: Chang Gung Memorial Hospital / NTOU
 - title: CMBB生物資訊核心技術開發與應用服務
-  title_en: CMBB Core Bioinformatics Technology Development and Application Services
   role: pi
   period: 100/04 ~ 100/12
   period_en: 2011/04 – 2011/12
@@ -222,9 +194,7 @@
   output:
     url: http://bimfg.cs.ntou.edu.tw
     text: 海洋模式物種基因體資料庫系統
-    text_en: Marine Model Species Genome Database
 - title: 蛋白質功能區域自動切割、分類及表面比對之研究 (2/2)
-  title_en: Automatic Segmentation, Classification and Surface Comparison of Protein Functional Domains (2/2)
   code: NSC 98-2221-E-019-031-MY2
   role: pi
   period: 99/08 ~ 100/07
@@ -232,7 +202,6 @@
   agency: 國科會
   agency_en: NSC
 - title: B細胞抗原決定位預測、評估與資料庫之建立
-  title_en: B-Cell Epitope Prediction, Evaluation and Database Construction
   code: NSC 96-2221-E-019-043
   role: pi
   period: 96/08 ~ 97/07
@@ -242,9 +211,7 @@
   output:
     url: http://140.121.196.30/LEPD_Antigenicity.php
     text: B細胞線性抗原決定位預測系統
-    text_en: B-cell Linear Epitope Prediction System
 - title: 基於序列組合特徵之快速多重蛋白質結構排比技術
-  title_en: Fast Multiple Protein Structure Alignment Based on Sequence Compositional Features
   code: NSC 95-2221-E-019-032
   role: pi
   period: 95/08 ~ 96/07
@@ -254,4 +221,3 @@
   output:
     url: http://misa.cs.ntou.edu.tw/
     text: MISA 網站
-    text_en: MISA website

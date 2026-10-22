@@ -14,7 +14,7 @@ jsonld: true
       <p class="hero-lead">以生物資訊與醫學資訊為核心，結合機器學習、影像分析與物聯網技術，致力於癌症生物標記發現、幼兒發展遲緩診斷與個人化醫療等應用研究。</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#research">探索研究領域 {% include icon.html name="arrow" %}</a>
-        <a class="btn btn-light" href="#contact">加入我們</a>
+        <a class="btn btn-light" href="#contact">聯絡我們</a>
       </div>
       <div class="hero-tags"><span>Bioinformatics</span><span>Medical AI</span><span>Disease Trajectory</span><span>IoMT</span><span>Digital Pathology</span></div>
     </div>
@@ -34,9 +34,9 @@ jsonld: true
 <section class="stats" aria-label="實驗室概況">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat"><div class="stat-num" data-count="{{ stat_years }}" data-since="{{ site.lab.founded }}">{{ stat_years }}<sup>+</sup></div><div class="stat-label">年研究耕耘</div></div>
+      <div class="stat"><div class="stat-num" data-count="{{ stat_phd }}">{{ stat_phd }}</div><div class="stat-label">位博士畢業生</div></div>
       <div class="stat"><div class="stat-num" data-count="{{ stat_total }}">{{ stat_total }}</div><div class="stat-label">位畢業研究生</div></div>
-      <div class="stat"><div class="stat-num" data-count="{{ stat_projects }}">{{ stat_projects }}<sup>+</sup></div><div class="stat-label">項研究計畫</div></div>
+      <div class="stat"><div class="stat-num" data-count="{{ stat_projects }}">{{ stat_projects }}</div><div class="stat-label">項研究計畫（2006–2020）</div></div>
       <div class="stat"><div class="stat-num" data-count="{{ site.data.research.size }}">{{ site.data.research.size }}</div><div class="stat-label">大核心研究領域</div></div>
     </div>
   </div>
@@ -67,13 +67,13 @@ jsonld: true
         <div class="fact"><dt>學歷 Education</dt><dd>Ph.D., Duke University<br>MSE, Johns Hopkins University</dd></div>
         <div class="fact"><dt>合聘 Adjunct</dt><dd>國立臺灣海洋大學<br>資訊工程學系 合聘教授</dd></div>
         <div class="fact"><dt>教師辦公室 Office</dt><dd>{{ site.lab.office }}<br>{{ site.lab.phone_office }}</dd></div>
-        <div class="fact"><dt>實驗室 Lab</dt><dd>{{ site.lab.room }}<br>{{ site.lab.phone_lab }}</dd></div>
+        <div class="fact"><dt>實驗室 Lab</dt><dd>{{ site.lab.room }}</dd></div>
       </dl>
       <div class="profile-links">
         <a class="btn btn-primary btn-sm" href="{{ '/Resume.htm' | relative_url }}">個人履歷 {% include icon.html name="arrow" %}</a>
         <a class="btn btn-ghost btn-sm" href="{{ site.lab.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>
         <a class="btn btn-ghost btn-sm" href="{{ site.lab.pubmed }}" target="_blank" rel="noopener">PubMed ↗</a>
-        <a class="btn btn-ghost btn-sm" href="{{ '/C302.pdf' | relative_url }}" target="_blank" rel="noopener">著作目錄 PDF</a>
+        <a class="btn btn-ghost btn-sm" href="{{ '/C302.pdf' | relative_url }}" target="_blank" rel="noopener">著作目錄（至 2019 年）</a>
       </div>
     </div>
   </div>

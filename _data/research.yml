@@ -20,8 +20,8 @@
 - slug: medical-informatics
   title: 醫學巨量資訊分析
   title_en: Big Data in Medical Informatics
-  summary: 以電子病歷與健保資料為基礎，探勘疾病軌跡樣式與共病網路，建立可解釋的風險預測模型，輔助臨床決策與個人化醫療策略。
-  summary_en: Building on electronic medical records and health insurance data, we mine disease trajectory patterns and comorbidity networks to build explainable risk prediction models that support clinical decisions and personalized medicine.
+  summary: 以電子病歷等臨床資料為基礎，探勘疾病軌跡樣式與共病網路，建立可解釋的風險預測模型，輔助臨床決策與個人化醫療策略。
+  summary_en: Building on electronic medical records and other clinical data, we mine disease trajectory patterns and comorbidity networks to build explainable risk prediction models that support clinical decisions and personalized medicine.
   tags:
   - 疾病軌跡探勘
   - 共病網路

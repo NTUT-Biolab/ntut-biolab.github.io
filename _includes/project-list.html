@@ -3,12 +3,12 @@
         {%- for p in site.data.projects %}
         <li class="card project">
           <div>
-            <h3>{% if en %}{{ p.title_en | escape }}{% else %}{{ p.title | escape }}{% endif %}</h3>
+            <h3{% if en %} lang="zh-Hant"{% endif %}>{{ p.title | escape }}</h3>
             <div class="project-meta"><span class="badge{% if p.role == 'pi' %} badge-pi{% endif %}">{% if p.role == "pi" %}{% if en %}Principal Investigator{% else %}計畫主持人{% endif %}{% else %}{% if en %}Co-Principal Investigator{% else %}共同主持人{% endif %}{% endif %}</span><span>{% if en %}{{ p.agency_en }}{% else %}{{ p.agency }}{% endif %}</span>{% if p.code %}<span class="code">{{ p.code }}</span>{% endif %}</div>
           </div>
           <div class="project-side"><span class="project-period">{% if en %}{{ p.period_en }}{% else %}{{ p.period }}{% endif %}</span>{% if p.status == "ongoing" %}<span class="badge badge-pi">{% if en %}Ongoing{% else %}執行中{% endif %}</span>{% else %}<span class="badge badge-done">{% if en %}Completed{% else %}已結案{% endif %}</span>{% endif %}</div>
           {%- if p.output %}
-          <div class="project-output"><a href="{{ p.output.url }}" target="_blank" rel="noopener">{% if en %}{{ p.output.text_en }}{% else %}{{ p.output.text }}{% endif %}</a></div>
+          <div class="project-output"><a href="{{ p.output.url }}" target="_blank" rel="noopener">{{ p.output.text }}</a></div>
           {%- endif %}
         </li>
         {%- endfor %}
