@@ -1,5 +1,5 @@
 # 歷屆研究所畢業生，依學年度由新到舊排列。
-# degree: phd（博士）或 ms（碩士）。name_en / thesis_en / link / coadvisor（共同指導教授）可省略。
+# degree: phd（博士）或 ms（碩士）。name_en / thesis_en / link 可省略。
 # 新增一位畢業生：在對應學年度的 graduates 底下加一筆；新學年度請加在最上面。
 
 - year: 114
@@ -13,7 +13,6 @@
     link: https://scholar.google.com/citations?user=lgOY-SoAAAAJ&hl=zh-TW
     thesis: 應用大型語言模型於網路威脅情資分析之研究
     thesis_en: A Study on Applying Large Language Models to Cyber Threat Intelligence Analysis
-    coadvisor: 孫勤昱
   - degree: ms
     name: 游宗霖
     thesis: 基於影片之嬰兒大肢體動作發展評估：全身性與姿態性特徵設計與評估研究
@@ -32,7 +31,6 @@
   - degree: ms
     name: 宋斐文
     thesis: 高維度少量樣本資料之特徵識別研究：以 DNA 甲基化資料為例
-    coadvisor: 蔡偉和
 - year: 113
   graduates:
   - degree: phd
