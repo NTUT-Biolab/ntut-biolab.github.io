@@ -92,7 +92,7 @@ jsonld: true
       <article class="card thesis-card reveal">
         <div class="thesis-meta"><span class="badge badge-{{ a.degree }}">{% if a.degree == "phd" %}博士{% else %}碩士{% endif %}</span>{{ g.year }} 學年度</div>
         <h3>{{ a.thesis | escape }}</h3>
-        <p>{{ a.thesis_en | escape }}</p>
+        {% if a.thesis_en %}<p>{{ a.thesis_en | escape }}</p>{% endif %}
         <div class="author">{{ a.name | escape }}{% if a.name_en %} · <span class="en">{{ a.name_en | escape }}</span>{% endif %}</div>
       </article>
 {%- assign shown = shown | plus: 1 %}{% endif %}{% endfor %}{% endfor %}
